@@ -1,0 +1,458 @@
+
+EQNSET 102 "ATPG_Phase_B"
+
+SPECS
+
+Period                                             [ns]
+drive_PI                                           [ns]
+strobe_PO                                          [ns]
+
+drive_SI_edp12_tv_tx_par_wrap_test_ck_0            [ns]
+drive_SI_emi_top_par_wrap_test_ck_0                [ns]
+drive_SI_mheg5_par_wrap_test_ck_0                  [ns]
+drive_SI_mod_par_wrap_test_ck_0                    [ns]
+drive_SI_pm_par_wrap_test_ck_0                     [ns]
+drive_SI_u_dramc_combo_top_par_wrap_ch0_test_ck_0  [ns]
+drive_SI_vby1rx_par_wrap_test_ck_0                 [ns]
+
+strobe_SO_edp12_tv_tx_par_wrap_test_ck_0           [ns]
+strobe_SO_emi_top_par_wrap_test_ck_0               [ns]
+strobe_SO_mheg5_par_wrap_test_ck_0                 [ns]
+strobe_SO_mod_par_wrap_test_ck_0                   [ns]
+strobe_SO_pm_par_wrap_test_ck_0                    [ns]
+strobe_SO_u_dramc_combo_top_par_wrap_ch0_test_ck_0 [ns]
+strobe_SO_vby1rx_par_wrap_test_ck_0                [ns]
+
+rising_GPIO311                                     [ns]
+falling_GPIO311                                    [ns]
+rising_MSPI0_Q_IO1                                 [ns]
+falling_MSPI0_Q_IO1                                [ns]
+rising_MSPI1_SCZ                                   [ns]
+falling_MSPI1_SCZ                                  [ns]
+rising_MSPI2_Q_SCZ                                 [ns]
+falling_MSPI2_Q_SCZ                                [ns]
+rising_MSPI4_Q_SCK                                 [ns]
+falling_MSPI4_Q_SCK                                [ns]
+rising_MSPI5_Q_IO1                                 [ns]
+falling_MSPI5_Q_IO1                                [ns]
+rising_U0RX                                        [ns]
+falling_U0RX                                       [ns]
+rising_U0TX                                        [ns]
+falling_U0TX                                       [ns]
+rising_U2RX                                        [ns]
+falling_U2RX                                       [ns]
+
+
+EQUATIONS
+
+TIMINGSET 1 "Phase_B_Set"
+period = Period * 4
+
+PINS ALLPINS
+          d1 = drive_PI
+          d3 = drive_PI  + 1*Period
+          d5 = drive_PI  + 2*Period
+          d7 = drive_PI  + 3*Period
+          r1 = strobe_PO
+          r3 = strobe_PO  + 1*Period
+          r5 = strobe_PO  + 2*Period
+          r7 = strobe_PO  + 3*Period
+
+PINS SI_edp12_tv_tx_par_wrap_test_ck_0
+         d1 = drive_SI_edp12_tv_tx_par_wrap_test_ck_0
+         d3 = drive_SI_edp12_tv_tx_par_wrap_test_ck_0  + 1*Period
+         d5 = drive_SI_edp12_tv_tx_par_wrap_test_ck_0  + 2*Period
+         d7 = drive_SI_edp12_tv_tx_par_wrap_test_ck_0  + 3*Period
+         r1 = strobe_PO
+         r3 = strobe_PO  + 1*Period
+         r5 = strobe_PO  + 2*Period
+         r7 = strobe_PO  + 3*Period
+PINS SI_emi_top_par_wrap_test_ck_0
+         d1 = drive_SI_emi_top_par_wrap_test_ck_0
+         d3 = drive_SI_emi_top_par_wrap_test_ck_0  + 1*Period
+         d5 = drive_SI_emi_top_par_wrap_test_ck_0  + 2*Period
+         d7 = drive_SI_emi_top_par_wrap_test_ck_0  + 3*Period
+         r1 = strobe_PO
+         r3 = strobe_PO  + 1*Period
+         r5 = strobe_PO  + 2*Period
+         r7 = strobe_PO  + 3*Period
+PINS SI_mheg5_par_wrap_test_ck_0
+         d1 = drive_SI_mheg5_par_wrap_test_ck_0
+         d3 = drive_SI_mheg5_par_wrap_test_ck_0  + 1*Period
+         d5 = drive_SI_mheg5_par_wrap_test_ck_0  + 2*Period
+         d7 = drive_SI_mheg5_par_wrap_test_ck_0  + 3*Period
+         r1 = strobe_PO
+         r3 = strobe_PO  + 1*Period
+         r5 = strobe_PO  + 2*Period
+         r7 = strobe_PO  + 3*Period
+PINS SI_mod_par_wrap_test_ck_0
+         d1 = drive_SI_mod_par_wrap_test_ck_0
+         d3 = drive_SI_mod_par_wrap_test_ck_0  + 1*Period
+         d5 = drive_SI_mod_par_wrap_test_ck_0  + 2*Period
+         d7 = drive_SI_mod_par_wrap_test_ck_0  + 3*Period
+         r1 = strobe_PO
+         r3 = strobe_PO  + 1*Period
+         r5 = strobe_PO  + 2*Period
+         r7 = strobe_PO  + 3*Period
+PINS SI_pm_par_wrap_test_ck_0
+         d1 = drive_SI_pm_par_wrap_test_ck_0
+         d3 = drive_SI_pm_par_wrap_test_ck_0  + 1*Period
+         d5 = drive_SI_pm_par_wrap_test_ck_0  + 2*Period
+         d7 = drive_SI_pm_par_wrap_test_ck_0  + 3*Period
+         r1 = strobe_PO
+         r3 = strobe_PO  + 1*Period
+         r5 = strobe_PO  + 2*Period
+         r7 = strobe_PO  + 3*Period
+PINS SI_u_dramc_combo_top_par_wrap_ch0_test_ck_0
+         d1 = drive_SI_u_dramc_combo_top_par_wrap_ch0_test_ck_0
+         d3 = drive_SI_u_dramc_combo_top_par_wrap_ch0_test_ck_0  + 1*Period
+         d5 = drive_SI_u_dramc_combo_top_par_wrap_ch0_test_ck_0  + 2*Period
+         d7 = drive_SI_u_dramc_combo_top_par_wrap_ch0_test_ck_0  + 3*Period
+         r1 = strobe_PO
+         r3 = strobe_PO  + 1*Period
+         r5 = strobe_PO  + 2*Period
+         r7 = strobe_PO  + 3*Period
+PINS SI_vby1rx_par_wrap_test_ck_0
+         d1 = drive_SI_vby1rx_par_wrap_test_ck_0
+         d3 = drive_SI_vby1rx_par_wrap_test_ck_0  + 1*Period
+         d5 = drive_SI_vby1rx_par_wrap_test_ck_0  + 2*Period
+         d7 = drive_SI_vby1rx_par_wrap_test_ck_0  + 3*Period
+         r1 = strobe_PO
+         r3 = strobe_PO  + 1*Period
+         r5 = strobe_PO  + 2*Period
+         r7 = strobe_PO  + 3*Period
+
+PINS SO_edp12_tv_tx_par_wrap_test_ck_0
+         d1 = drive_PI
+         d3 = drive_PI  + 1*Period
+         d5 = drive_PI  + 2*Period
+         d7 = drive_PI  + 3*Period
+         r1 = strobe_SO_edp12_tv_tx_par_wrap_test_ck_0
+         r3 = strobe_SO_edp12_tv_tx_par_wrap_test_ck_0  + 1*Period
+         r5 = strobe_SO_edp12_tv_tx_par_wrap_test_ck_0  + 2*Period
+         r7 = strobe_SO_edp12_tv_tx_par_wrap_test_ck_0  + 3*Period
+PINS SO_emi_top_par_wrap_test_ck_0
+         d1 = drive_PI
+         d3 = drive_PI  + 1*Period
+         d5 = drive_PI  + 2*Period
+         d7 = drive_PI  + 3*Period
+         r1 = strobe_SO_emi_top_par_wrap_test_ck_0
+         r3 = strobe_SO_emi_top_par_wrap_test_ck_0  + 1*Period
+         r5 = strobe_SO_emi_top_par_wrap_test_ck_0  + 2*Period
+         r7 = strobe_SO_emi_top_par_wrap_test_ck_0  + 3*Period
+PINS SO_mheg5_par_wrap_test_ck_0
+         d1 = drive_PI
+         d3 = drive_PI  + 1*Period
+         d5 = drive_PI  + 2*Period
+         d7 = drive_PI  + 3*Period
+         r1 = strobe_SO_mheg5_par_wrap_test_ck_0
+         r3 = strobe_SO_mheg5_par_wrap_test_ck_0  + 1*Period
+         r5 = strobe_SO_mheg5_par_wrap_test_ck_0  + 2*Period
+         r7 = strobe_SO_mheg5_par_wrap_test_ck_0  + 3*Period
+PINS SO_mod_par_wrap_test_ck_0
+         d1 = drive_PI
+         d3 = drive_PI  + 1*Period
+         d5 = drive_PI  + 2*Period
+         d7 = drive_PI  + 3*Period
+         r1 = strobe_SO_mod_par_wrap_test_ck_0
+         r3 = strobe_SO_mod_par_wrap_test_ck_0  + 1*Period
+         r5 = strobe_SO_mod_par_wrap_test_ck_0  + 2*Period
+         r7 = strobe_SO_mod_par_wrap_test_ck_0  + 3*Period
+PINS SO_pm_par_wrap_test_ck_0
+         d1 = drive_PI
+         d3 = drive_PI  + 1*Period
+         d5 = drive_PI  + 2*Period
+         d7 = drive_PI  + 3*Period
+         r1 = strobe_SO_pm_par_wrap_test_ck_0
+         r3 = strobe_SO_pm_par_wrap_test_ck_0  + 1*Period
+         r5 = strobe_SO_pm_par_wrap_test_ck_0  + 2*Period
+         r7 = strobe_SO_pm_par_wrap_test_ck_0  + 3*Period
+PINS SO_u_dramc_combo_top_par_wrap_ch0_test_ck_0
+         d1 = drive_PI
+         d3 = drive_PI  + 1*Period
+         d5 = drive_PI  + 2*Period
+         d7 = drive_PI  + 3*Period
+         r1 = strobe_SO_u_dramc_combo_top_par_wrap_ch0_test_ck_0
+         r3 = strobe_SO_u_dramc_combo_top_par_wrap_ch0_test_ck_0  + 1*Period
+         r5 = strobe_SO_u_dramc_combo_top_par_wrap_ch0_test_ck_0  + 2*Period
+         r7 = strobe_SO_u_dramc_combo_top_par_wrap_ch0_test_ck_0  + 3*Period
+PINS SO_vby1rx_par_wrap_test_ck_0
+         d1 = drive_PI
+         d3 = drive_PI  + 1*Period
+         d5 = drive_PI  + 2*Period
+         d7 = drive_PI  + 3*Period
+         r1 = strobe_SO_vby1rx_par_wrap_test_ck_0
+         r3 = strobe_SO_vby1rx_par_wrap_test_ck_0  + 1*Period
+         r5 = strobe_SO_vby1rx_par_wrap_test_ck_0  + 2*Period
+         r7 = strobe_SO_vby1rx_par_wrap_test_ck_0  + 3*Period
+
+PINS GPIO311
+         d1 = rising_GPIO311
+         d3 = rising_GPIO311  + 1*Period
+         d5 = rising_GPIO311  + 2*Period
+         d7 = rising_GPIO311  + 3*Period
+         d2 = falling_GPIO311
+         d4 = falling_GPIO311  + 1*Period
+         d6 = falling_GPIO311  + 2*Period
+         d8 = falling_GPIO311  + 3*Period
+
+PINS MSPI0_Q_IO1
+         d1 = rising_MSPI0_Q_IO1
+         d3 = rising_MSPI0_Q_IO1  + 1*Period
+         d5 = rising_MSPI0_Q_IO1  + 2*Period
+         d7 = rising_MSPI0_Q_IO1  + 3*Period
+         d2 = falling_MSPI0_Q_IO1
+         d4 = falling_MSPI0_Q_IO1  + 1*Period
+         d6 = falling_MSPI0_Q_IO1  + 2*Period
+         d8 = falling_MSPI0_Q_IO1  + 3*Period
+
+PINS MSPI1_SCZ
+         d1 = rising_MSPI1_SCZ
+         d3 = rising_MSPI1_SCZ  + 1*Period
+         d5 = rising_MSPI1_SCZ  + 2*Period
+         d7 = rising_MSPI1_SCZ  + 3*Period
+         d2 = falling_MSPI1_SCZ
+         d4 = falling_MSPI1_SCZ  + 1*Period
+         d6 = falling_MSPI1_SCZ  + 2*Period
+         d8 = falling_MSPI1_SCZ  + 3*Period
+
+PINS MSPI2_Q_SCZ
+         d1 = rising_MSPI2_Q_SCZ
+         d3 = rising_MSPI2_Q_SCZ  + 1*Period
+         d5 = rising_MSPI2_Q_SCZ  + 2*Period
+         d7 = rising_MSPI2_Q_SCZ  + 3*Period
+         d2 = falling_MSPI2_Q_SCZ
+         d4 = falling_MSPI2_Q_SCZ  + 1*Period
+         d6 = falling_MSPI2_Q_SCZ  + 2*Period
+         d8 = falling_MSPI2_Q_SCZ  + 3*Period
+
+PINS MSPI4_Q_SCK
+         d1 = rising_MSPI4_Q_SCK
+         d3 = rising_MSPI4_Q_SCK  + 1*Period
+         d5 = rising_MSPI4_Q_SCK  + 2*Period
+         d7 = rising_MSPI4_Q_SCK  + 3*Period
+         d2 = falling_MSPI4_Q_SCK
+         d4 = falling_MSPI4_Q_SCK  + 1*Period
+         d6 = falling_MSPI4_Q_SCK  + 2*Period
+         d8 = falling_MSPI4_Q_SCK  + 3*Period
+
+PINS MSPI5_Q_IO1
+         d1 = rising_MSPI5_Q_IO1
+         d3 = rising_MSPI5_Q_IO1  + 1*Period
+         d5 = rising_MSPI5_Q_IO1  + 2*Period
+         d7 = rising_MSPI5_Q_IO1  + 3*Period
+         d2 = falling_MSPI5_Q_IO1
+         d4 = falling_MSPI5_Q_IO1  + 1*Period
+         d6 = falling_MSPI5_Q_IO1  + 2*Period
+         d8 = falling_MSPI5_Q_IO1  + 3*Period
+
+PINS U0RX
+         d1 = rising_U0RX
+         d3 = rising_U0RX  + 1*Period
+         d5 = rising_U0RX  + 2*Period
+         d7 = rising_U0RX  + 3*Period
+         d2 = falling_U0RX
+         d4 = falling_U0RX  + 1*Period
+         d6 = falling_U0RX  + 2*Period
+         d8 = falling_U0RX  + 3*Period
+
+PINS U0TX
+         d1 = rising_U0TX
+         d3 = rising_U0TX  + 1*Period
+         d5 = rising_U0TX  + 2*Period
+         d7 = rising_U0TX  + 3*Period
+         d2 = falling_U0TX
+         d4 = falling_U0TX  + 1*Period
+         d6 = falling_U0TX  + 2*Period
+         d8 = falling_U0TX  + 3*Period
+
+PINS U2RX
+         d1 = rising_U2RX
+         d3 = rising_U2RX  + 1*Period
+         d5 = rising_U2RX  + 2*Period
+         d7 = rising_U2RX  + 3*Period
+         d2 = falling_U2RX
+         d4 = falling_U2RX  + 1*Period
+         d6 = falling_U2RX  + 2*Period
+         d8 = falling_U2RX  + 3*Period
+
+
+
+EQNSET 102 "ATPG_Phase_B"
+
+WAVETBL "ATPG_Phase_B_type_X4"
+
+CHECK all
+
+SPECSET 10 "ATPG_Phase_B_100ns_HV"
+
+# SPECNAME                     *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                         100.00                            [ns]
+drive_PI                       0.00                              [ns]
+strobe_PO                      5.00                              [ns]
+
+drive_SI_edp12_tv_tx_par_wrap_test_ck_0 -10.87     -59.17     37.43       [ns]
+drive_SI_emi_top_par_wrap_test_ck_0 -5.14      -51.90     41.62       [ns]
+drive_SI_mheg5_par_wrap_test_ck_0 -18.87     -65.38     27.63       [ns]
+drive_SI_mod_par_wrap_test_ck_0 -8.34      -55.55     38.87       [ns]
+drive_SI_pm_par_wrap_test_ck_0 -5.07      -51.86     41.72       [ns]
+drive_SI_u_dramc_combo_top_par_wrap_ch0_test_ck_0 -18.90     -65.44     27.64       [ns]
+drive_SI_vby1rx_par_wrap_test_ck_0 -20.75     -68.76     27.26       [ns]
+
+strobe_SO_edp12_tv_tx_par_wrap_test_ck_0 -2.64      -50.82     45.53      [ns]
+strobe_SO_emi_top_par_wrap_test_ck_0 3.60       -43.54     50.74      [ns]
+strobe_SO_mheg5_par_wrap_test_ck_0 -9.43      -57.83     38.98      [ns]
+strobe_SO_mod_par_wrap_test_ck_0 3.57       -41.82     48.96      [ns]
+strobe_SO_pm_par_wrap_test_ck_0 8.51       -37.33     54.34      [ns]
+strobe_SO_u_dramc_combo_top_par_wrap_ch0_test_ck_0 -4.60      -49.65     40.45      [ns]
+strobe_SO_vby1rx_par_wrap_test_ck_0 -6.99      -52.30     38.32      [ns]
+
+rising_GPIO311                 33.92                             [ns]
+falling_GPIO311                84.46                             [ns]
+rising_MSPI0_Q_IO1             45.58                             [ns]
+falling_MSPI0_Q_IO1            90.29                             [ns]
+rising_MSPI1_SCZ               42.50                             [ns]
+falling_MSPI1_SCZ              88.75                             [ns]
+rising_MSPI2_Q_SCZ             51.03                             [ns]
+falling_MSPI2_Q_SCZ            93.01                             [ns]
+rising_MSPI4_Q_SCK             36.04                             [ns]
+falling_MSPI4_Q_SCK            85.52                             [ns]
+rising_MSPI5_Q_IO1             47.31                             [ns]
+falling_MSPI5_Q_IO1            91.15                             [ns]
+rising_U0RX                    36.38                             [ns]
+falling_U0RX                   85.69                             [ns]
+rising_U0TX                    35.17                             [ns]
+falling_U0TX                   85.09                             [ns]
+rising_U2RX                    35.29                             [ns]
+falling_U2RX                   85.14                             [ns]
+
+
+SPECSET 40 "ATPG_Phase_B_25ns_HV"
+
+# SPECNAME                     *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                         25.00                             [ns]
+drive_PI                       0.00                              [ns]
+strobe_PO                      5.00                              [ns]
+
+drive_SI_edp12_tv_tx_par_wrap_test_ck_0 -5.24      -16.04     5.56        [ns]
+drive_SI_emi_top_par_wrap_test_ck_0 -4.20      -13.46     5.06        [ns]
+drive_SI_mheg5_par_wrap_test_ck_0 -6.70      -15.71     2.30        [ns]
+drive_SI_mod_par_wrap_test_ck_0 -5.81      -15.52     3.90        [ns]
+drive_SI_pm_par_wrap_test_ck_0 -7.85      -17.15     1.44        [ns]
+drive_SI_u_dramc_combo_top_par_wrap_ch0_test_ck_0 -6.39      -15.43     2.65        [ns]
+drive_SI_vby1rx_par_wrap_test_ck_0 -7.78      -18.29     2.73        [ns]
+
+strobe_SO_edp12_tv_tx_par_wrap_test_ck_0 2.99       -7.69      13.66      [ns]
+strobe_SO_emi_top_par_wrap_test_ck_0 4.54       -5.10      14.18      [ns]
+strobe_SO_mheg5_par_wrap_test_ck_0 2.74       -8.16      13.65      [ns]
+strobe_SO_mod_par_wrap_test_ck_0 6.10       -1.79      13.99      [ns]
+strobe_SO_pm_par_wrap_test_ck_0 5.73       -2.61      14.06      [ns]
+strobe_SO_u_dramc_combo_top_par_wrap_ch0_test_ck_0 7.91       0.36       15.46      [ns]
+strobe_SO_vby1rx_par_wrap_test_ck_0 5.98       -1.83      13.79      [ns]
+
+rising_GPIO311                 9.39                              [ns]
+falling_GPIO311                21.57                             [ns]
+rising_MSPI0_Q_IO1             10.61                             [ns]
+falling_MSPI0_Q_IO1            22.18                             [ns]
+rising_MSPI1_SCZ               10.63                             [ns]
+falling_MSPI1_SCZ              22.19                             [ns]
+rising_MSPI2_Q_SCZ             10.75                             [ns]
+falling_MSPI2_Q_SCZ            22.25                             [ns]
+rising_MSPI4_Q_SCK             10.71                             [ns]
+falling_MSPI4_Q_SCK            22.23                             [ns]
+rising_MSPI5_Q_IO1             10.75                             [ns]
+falling_MSPI5_Q_IO1            22.25                             [ns]
+rising_U0RX                    11.39                             [ns]
+falling_U0RX                   22.57                             [ns]
+rising_U0TX                    10.25                             [ns]
+falling_U0TX                   22.00                             [ns]
+rising_U2RX                    10.34                             [ns]
+falling_U2RX                   22.04                             [ns]
+
+
+SPECSET 60 "ATPG_Phase_B_16.6ns_HV"
+
+# SPECNAME                     *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                         16.60                             [ns]
+drive_PI                       0.00                              [ns]
+strobe_PO                      5.00                              [ns]
+
+drive_SI_edp12_tv_tx_par_wrap_test_ck_0 -4.61      -11.21     1.99        [ns]
+drive_SI_emi_top_par_wrap_test_ck_0 -3.69      -8.75      1.37        [ns]
+drive_SI_mheg5_par_wrap_test_ck_0 -6.14      -10.95     -1.33       [ns]
+drive_SI_mod_par_wrap_test_ck_0 -5.21      -10.72     0.30        [ns]
+drive_SI_pm_par_wrap_test_ck_0 -7.32      -12.41     -2.23       [ns]
+drive_SI_u_dramc_combo_top_par_wrap_ch0_test_ck_0 -5.85      -10.69     -1.01       [ns]
+drive_SI_vby1rx_par_wrap_test_ck_0 -6.62      -12.93     -0.31       [ns]
+
+strobe_SO_edp12_tv_tx_par_wrap_test_ck_0 3.62       -2.86      10.09      [ns]
+strobe_SO_emi_top_par_wrap_test_ck_0 5.05       -0.39      10.49      [ns]
+strobe_SO_mheg5_par_wrap_test_ck_0 3.31       -3.40      10.01      [ns]
+strobe_SO_mod_par_wrap_test_ck_0 6.70       3.01       10.39      [ns]
+strobe_SO_pm_par_wrap_test_ck_0 6.26       2.12       10.40      [ns]
+strobe_SO_u_dramc_combo_top_par_wrap_ch0_test_ck_0 8.45       5.10       11.80      [ns]
+strobe_SO_vby1rx_par_wrap_test_ck_0 7.14       3.53       10.75      [ns]
+
+rising_GPIO311                 6.35                              [ns]
+falling_GPIO311                14.38                             [ns]
+rising_MSPI0_Q_IO1             7.01                              [ns]
+falling_MSPI0_Q_IO1            14.71                             [ns]
+rising_MSPI1_SCZ               7.06                              [ns]
+falling_MSPI1_SCZ              14.73                             [ns]
+rising_MSPI2_Q_SCZ             7.08                              [ns]
+falling_MSPI2_Q_SCZ            14.75                             [ns]
+rising_MSPI4_Q_SCK             7.07                              [ns]
+falling_MSPI4_Q_SCK            14.74                             [ns]
+rising_MSPI5_Q_IO1             7.06                              [ns]
+falling_MSPI5_Q_IO1            14.73                             [ns]
+rising_U0RX                    7.73                              [ns]
+falling_U0RX                   15.07                             [ns]
+rising_U0TX                    6.59                              [ns]
+falling_U0TX                   14.50                             [ns]
+rising_U2RX                    6.69                              [ns]
+falling_U2RX                   14.55                             [ns]
+
+
+SPECSET 80 "ATPG_Phase_B_12.5ns_HV"
+
+# SPECNAME                     *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                         12.50                             [ns]
+drive_PI                       0.00                              [ns]
+strobe_PO                      5.00                              [ns]
+
+drive_SI_edp12_tv_tx_par_wrap_test_ck_0 -4.31      -8.86      0.24        [ns]
+drive_SI_emi_top_par_wrap_test_ck_0 -3.39      -6.40      -0.38       [ns]
+drive_SI_mheg5_par_wrap_test_ck_0 -5.84      -8.60      -3.08       [ns]
+drive_SI_mod_par_wrap_test_ck_0 -4.91      -8.37      -1.45       [ns]
+drive_SI_pm_par_wrap_test_ck_0 -7.02      -10.07     -3.98       [ns]
+drive_SI_u_dramc_combo_top_par_wrap_ch0_test_ck_0 -5.74      -8.53      -2.95       [ns]
+drive_SI_vby1rx_par_wrap_test_ck_0 -5.60      -9.86      -1.34       [ns]
+
+strobe_SO_edp12_tv_tx_par_wrap_test_ck_0 3.92       -0.51      8.34       [ns]
+strobe_SO_emi_top_par_wrap_test_ck_0 5.35       1.96       8.74       [ns]
+strobe_SO_mheg5_par_wrap_test_ck_0 3.61       -1.05      8.26       [ns]
+strobe_SO_mod_par_wrap_test_ck_0 7.00       5.35       8.64       [ns]
+strobe_SO_pm_par_wrap_test_ck_0 6.56       4.47       8.64       [ns]
+strobe_SO_u_dramc_combo_top_par_wrap_ch0_test_ck_0 8.56       7.26       9.86       [ns]
+strobe_SO_vby1rx_par_wrap_test_ck_0 8.16       6.60       9.72       [ns]
+
+rising_GPIO311                 5.32                              [ns]
+falling_GPIO311                11.10                             [ns]
+rising_MSPI0_Q_IO1             5.26                              [ns]
+falling_MSPI0_Q_IO1            11.07                             [ns]
+rising_MSPI1_SCZ               5.31                              [ns]
+falling_MSPI1_SCZ              11.09                             [ns]
+rising_MSPI2_Q_SCZ             5.33                              [ns]
+falling_MSPI2_Q_SCZ            11.10                             [ns]
+rising_MSPI4_Q_SCK             5.32                              [ns]
+falling_MSPI4_Q_SCK            11.10                             [ns]
+rising_MSPI5_Q_IO1             5.31                              [ns]
+falling_MSPI5_Q_IO1            11.09                             [ns]
+rising_U0RX                    5.79                              [ns]
+falling_U0RX                   11.33                             [ns]
+rising_U0TX                    4.69                              [ns]
+falling_U0TX                   10.78                             [ns]
+rising_U2RX                    4.76                              [ns]
+falling_U2RX                   10.82                             [ns]
+
+

@@ -1,0 +1,388 @@
+
+EQNSET 201 "ATPG_Phase_A"
+
+SPECS
+
+Period                                             [ns]
+drive_PI                                           [ns]
+strobe_PO                                          [ns]
+
+drive_SI_scan_test_0                               [ns]
+
+strobe_SO_scan_test_0                              [ns]
+
+rising_GPIO60                                      [ns]
+falling_GPIO60                                     [ns]
+rising_GPIO61                                      [ns]
+falling_GPIO61                                     [ns]
+rising_TS1_SYNC                                    [ns]
+falling_TS1_SYNC                                   [ns]
+rising_TS1_CLK                                     [ns]
+falling_TS1_CLK                                    [ns]
+rising_TS1_D6                                      [ns]
+falling_TS1_D6                                     [ns]
+rising_TS1_D7                                      [ns]
+falling_TS1_D7                                     [ns]
+rising_GPIO62                                      [ns]
+falling_GPIO62                                     [ns]
+rising_GPIO63                                      [ns]
+falling_GPIO63                                     [ns]
+rising_TS2_CLK                                     [ns]
+falling_TS2_CLK                                    [ns]
+rising_TS2_D0                                      [ns]
+falling_TS2_D0                                     [ns]
+rising_TS2_SYNC                                    [ns]
+falling_TS2_SYNC                                   [ns]
+rising_TS2_VLD                                     [ns]
+falling_TS2_VLD                                    [ns]
+rising_TS1_D0                                      [ns]
+falling_TS1_D0                                     [ns]
+rising_TS1_VLD                                     [ns]
+falling_TS1_VLD                                    [ns]
+
+
+EQUATIONS
+
+TIMINGSET 1 "Phase_A_Set"
+period = Period * 4
+
+PINS ALLPINS
+          d1 = drive_PI
+          d3 = drive_PI  + 1*Period
+          d5 = drive_PI  + 2*Period
+          d7 = drive_PI  + 3*Period
+          r1 = strobe_PO
+          r3 = strobe_PO  + 1*Period
+          r5 = strobe_PO  + 2*Period
+          r7 = strobe_PO  + 3*Period
+
+PINS SI_scan_test_0
+         d1 = drive_SI_scan_test_0
+         d3 = drive_SI_scan_test_0  + 1*Period
+         d5 = drive_SI_scan_test_0  + 2*Period
+         d7 = drive_SI_scan_test_0  + 3*Period
+         r1 = strobe_PO
+         r3 = strobe_PO  + 1*Period
+         r5 = strobe_PO  + 2*Period
+         r7 = strobe_PO  + 3*Period
+
+PINS SO_scan_test_0
+         d1 = drive_PI
+         d3 = drive_PI  + 1*Period
+         d5 = drive_PI  + 2*Period
+         d7 = drive_PI  + 3*Period
+         r1 = strobe_SO_scan_test_0
+         r3 = strobe_SO_scan_test_0  + 1*Period
+         r5 = strobe_SO_scan_test_0  + 2*Period
+         r7 = strobe_SO_scan_test_0  + 3*Period
+
+PINS GPIO60
+         d1 = rising_GPIO60
+         d3 = rising_GPIO60  + 1*Period
+         d5 = rising_GPIO60  + 2*Period
+         d7 = rising_GPIO60  + 3*Period
+         d2 = falling_GPIO60
+         d4 = falling_GPIO60  + 1*Period
+         d6 = falling_GPIO60  + 2*Period
+         d8 = falling_GPIO60  + 3*Period
+
+PINS GPIO61
+         d1 = rising_GPIO61
+         d3 = rising_GPIO61  + 1*Period
+         d5 = rising_GPIO61  + 2*Period
+         d7 = rising_GPIO61  + 3*Period
+         d2 = falling_GPIO61
+         d4 = falling_GPIO61  + 1*Period
+         d6 = falling_GPIO61  + 2*Period
+         d8 = falling_GPIO61  + 3*Period
+
+PINS TS1_SYNC
+         d1 = rising_TS1_SYNC
+         d3 = rising_TS1_SYNC  + 1*Period
+         d5 = rising_TS1_SYNC  + 2*Period
+         d7 = rising_TS1_SYNC  + 3*Period
+         d2 = falling_TS1_SYNC
+         d4 = falling_TS1_SYNC  + 1*Period
+         d6 = falling_TS1_SYNC  + 2*Period
+         d8 = falling_TS1_SYNC  + 3*Period
+
+PINS TS1_CLK
+         d1 = rising_TS1_CLK
+         d3 = rising_TS1_CLK  + 1*Period
+         d5 = rising_TS1_CLK  + 2*Period
+         d7 = rising_TS1_CLK  + 3*Period
+         d2 = falling_TS1_CLK
+         d4 = falling_TS1_CLK  + 1*Period
+         d6 = falling_TS1_CLK  + 2*Period
+         d8 = falling_TS1_CLK  + 3*Period
+
+PINS TS1_D6
+         d1 = rising_TS1_D6
+         d3 = rising_TS1_D6  + 1*Period
+         d5 = rising_TS1_D6  + 2*Period
+         d7 = rising_TS1_D6  + 3*Period
+         d2 = falling_TS1_D6
+         d4 = falling_TS1_D6  + 1*Period
+         d6 = falling_TS1_D6  + 2*Period
+         d8 = falling_TS1_D6  + 3*Period
+
+PINS TS1_D7
+         d1 = rising_TS1_D7
+         d3 = rising_TS1_D7  + 1*Period
+         d5 = rising_TS1_D7  + 2*Period
+         d7 = rising_TS1_D7  + 3*Period
+         d2 = falling_TS1_D7
+         d4 = falling_TS1_D7  + 1*Period
+         d6 = falling_TS1_D7  + 2*Period
+         d8 = falling_TS1_D7  + 3*Period
+
+PINS GPIO62
+         d1 = rising_GPIO62
+         d3 = rising_GPIO62  + 1*Period
+         d5 = rising_GPIO62  + 2*Period
+         d7 = rising_GPIO62  + 3*Period
+         d2 = falling_GPIO62
+         d4 = falling_GPIO62  + 1*Period
+         d6 = falling_GPIO62  + 2*Period
+         d8 = falling_GPIO62  + 3*Period
+
+PINS GPIO63
+         d1 = rising_GPIO63
+         d3 = rising_GPIO63  + 1*Period
+         d5 = rising_GPIO63  + 2*Period
+         d7 = rising_GPIO63  + 3*Period
+         d2 = falling_GPIO63
+         d4 = falling_GPIO63  + 1*Period
+         d6 = falling_GPIO63  + 2*Period
+         d8 = falling_GPIO63  + 3*Period
+
+PINS TS2_CLK
+         d1 = rising_TS2_CLK
+         d3 = rising_TS2_CLK  + 1*Period
+         d5 = rising_TS2_CLK  + 2*Period
+         d7 = rising_TS2_CLK  + 3*Period
+         d2 = falling_TS2_CLK
+         d4 = falling_TS2_CLK  + 1*Period
+         d6 = falling_TS2_CLK  + 2*Period
+         d8 = falling_TS2_CLK  + 3*Period
+
+PINS TS2_D0
+         d1 = rising_TS2_D0
+         d3 = rising_TS2_D0  + 1*Period
+         d5 = rising_TS2_D0  + 2*Period
+         d7 = rising_TS2_D0  + 3*Period
+         d2 = falling_TS2_D0
+         d4 = falling_TS2_D0  + 1*Period
+         d6 = falling_TS2_D0  + 2*Period
+         d8 = falling_TS2_D0  + 3*Period
+
+PINS TS2_SYNC
+         d1 = rising_TS2_SYNC
+         d3 = rising_TS2_SYNC  + 1*Period
+         d5 = rising_TS2_SYNC  + 2*Period
+         d7 = rising_TS2_SYNC  + 3*Period
+         d2 = falling_TS2_SYNC
+         d4 = falling_TS2_SYNC  + 1*Period
+         d6 = falling_TS2_SYNC  + 2*Period
+         d8 = falling_TS2_SYNC  + 3*Period
+
+PINS TS2_VLD
+         d1 = rising_TS2_VLD
+         d3 = rising_TS2_VLD  + 1*Period
+         d5 = rising_TS2_VLD  + 2*Period
+         d7 = rising_TS2_VLD  + 3*Period
+         d2 = falling_TS2_VLD
+         d4 = falling_TS2_VLD  + 1*Period
+         d6 = falling_TS2_VLD  + 2*Period
+         d8 = falling_TS2_VLD  + 3*Period
+
+PINS TS1_D0
+         d1 = rising_TS1_D0
+         d3 = rising_TS1_D0  + 1*Period
+         d5 = rising_TS1_D0  + 2*Period
+         d7 = rising_TS1_D0  + 3*Period
+         d2 = falling_TS1_D0
+         d4 = falling_TS1_D0  + 1*Period
+         d6 = falling_TS1_D0  + 2*Period
+         d8 = falling_TS1_D0  + 3*Period
+
+PINS TS1_VLD
+         d1 = rising_TS1_VLD
+         d3 = rising_TS1_VLD  + 1*Period
+         d5 = rising_TS1_VLD  + 2*Period
+         d7 = rising_TS1_VLD  + 3*Period
+         d2 = falling_TS1_VLD
+         d4 = falling_TS1_VLD  + 1*Period
+         d6 = falling_TS1_VLD  + 2*Period
+         d8 = falling_TS1_VLD  + 3*Period
+
+EQNSET 202 "ATPG_Phase_A"
+
+WAVETBL "ATPG_Phase_A_type_X4"
+
+CHECK all
+
+SPECSET 40 "ATPG_Phase_A_25ns_HV"
+
+# SPECNAME            *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                25.00                            [ns]
+drive_PI              0.00                             [ns]
+strobe_PO             5.00                             [ns]
+
+drive_SI_scan_test_0  0.00       0.00       0.00       [ns]
+
+strobe_SO_scan_test_0 3.00       3.00       3.00       [ns]
+
+rising_GPIO60         5.00                             [ns]
+falling_GPIO60        18.00                            [ns]
+rising_GPIO61         12.00                            [ns]
+falling_GPIO61        22.00                            [ns]
+rising_TS1_SYNC       12.00                            [ns]
+falling_TS1_SYNC      22.00                            [ns]
+rising_TS1_CLK        12.00                            [ns]
+falling_TS1_CLK       22.00                            [ns]
+rising_TS1_D6         12.00                            [ns]
+falling_TS1_D6        22.00                            [ns]
+rising_TS1_D7         12.00                            [ns]
+falling_TS1_D7        22.00                            [ns]
+rising_GPIO62         10.50                            [ns]
+falling_GPIO62        16.50                            [ns]
+rising_GPIO63         12.00                            [ns]
+falling_GPIO63        22.00                            [ns]
+rising_TS2_CLK        10.50                            [ns]
+falling_TS2_CLK       16.50                            [ns]
+rising_TS2_D0         12.00                            [ns]
+falling_TS2_D0        22.00                            [ns]
+rising_TS2_SYNC       12.00                            [ns]
+falling_TS2_SYNC      22.00                            [ns]
+rising_TS2_VLD        12.00                            [ns]
+falling_TS2_VLD       22.00                            [ns]
+rising_TS1_D0         10.50                            [ns]
+falling_TS1_D0        16.50                            [ns]
+rising_TS1_VLD        12.00                            [ns]
+falling_TS1_VLD       22.00                            [ns]
+
+
+SPECSET 60 "ATPG_Phase_A_16.6ns_HV"
+
+# SPECNAME            *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                16.60                            [ns]
+drive_PI              0.00                             [ns]
+strobe_PO             5.00                             [ns]
+
+drive_SI_scan_test_0  0.00       0.00       0.00       [ns]
+
+strobe_SO_scan_test_0 2.00       2.00       2.00       [ns]
+
+rising_GPIO60         3.50                             [ns]
+falling_GPIO60        11.00                            [ns]
+rising_GPIO61         6.25                             [ns]
+falling_GPIO61        13.00                            [ns]
+rising_TS1_SYNC       7.40                             [ns]
+falling_TS1_SYNC      14.50                            [ns]
+rising_TS1_CLK        7.40                             [ns]
+falling_TS1_CLK       14.50                            [ns]
+rising_TS1_D6         7.40                             [ns]
+falling_TS1_D6        14.50                            [ns]
+rising_TS1_D7         7.40                             [ns]
+falling_TS1_D7        14.50                            [ns]
+rising_GPIO62         5.00                             [ns]
+falling_GPIO62        9.65                             [ns]
+rising_GPIO63         7.40                             [ns]
+falling_GPIO63        14.50                            [ns]
+rising_TS2_CLK        5.00                             [ns]
+falling_TS2_CLK       9.65                             [ns]
+rising_TS2_D0         7.40                             [ns]
+falling_TS2_D0        14.50                            [ns]
+rising_TS2_SYNC       7.40                             [ns]
+falling_TS2_SYNC      14.50                            [ns]
+rising_TS2_VLD        7.40                             [ns]
+falling_TS2_VLD       14.50                            [ns]
+rising_TS1_D0         4.75                             [ns]
+falling_TS1_D0        9.65                             [ns]
+rising_TS1_VLD        7.40                             [ns]
+falling_TS1_VLD       14.50                            [ns]
+
+
+SPECSET 80 "ATPG_Phase_A_12.5ns_HV"
+
+# SPECNAME            *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                12.50                            [ns]
+drive_PI              0.00                             [ns]
+strobe_PO             5.00                             [ns]
+
+drive_SI_scan_test_0  3.00       3.00       3.00       [ns]
+
+strobe_SO_scan_test_0 8.25       8.25       8.25       [ns]
+
+rising_GPIO60         2.50                             [ns]
+falling_GPIO60        8.00                             [ns]
+rising_GPIO61         5.75                             [ns]
+falling_GPIO61        10.00                            [ns]
+rising_TS1_SYNC       5.50                             [ns]
+falling_TS1_SYNC      10.75                            [ns]
+rising_TS1_CLK        5.50                             [ns]
+falling_TS1_CLK       10.75                            [ns]
+rising_TS1_D6         5.50                             [ns]
+falling_TS1_D6        10.75                            [ns]
+rising_TS1_D7         5.50                             [ns]
+falling_TS1_D7        10.75                            [ns]
+rising_GPIO62         4.50                             [ns]
+falling_GPIO62        7.75                             [ns]
+rising_GPIO63         5.50                             [ns]
+falling_GPIO63        10.75                            [ns]
+rising_TS2_CLK        4.50                             [ns]
+falling_TS2_CLK       7.75                             [ns]
+rising_TS2_D0         5.50                             [ns]
+falling_TS2_D0        10.75                            [ns]
+rising_TS2_SYNC       5.50                             [ns]
+falling_TS2_SYNC      10.75                            [ns]
+rising_TS2_VLD        5.50                             [ns]
+falling_TS2_VLD       10.75                            [ns]
+rising_TS1_D0         4.25                             [ns]
+falling_TS1_D0        7.75                             [ns]
+rising_TS1_VLD        5.50                             [ns]
+falling_TS1_VLD       10.75                            [ns]
+
+
+SPECSET 100 "ATPG_Phase_A_10ns_HV"
+
+# SPECNAME            *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                10                               [ns]
+drive_PI              0.00                             [ns]
+strobe_PO             5.00                             [ns]
+
+drive_SI_scan_test_0  3.00       3.00       3.00       [ns]
+
+strobe_SO_scan_test_0 7.00       7.00       7.00       [ns]
+
+rising_GPIO60         2.00                             [ns]
+falling_GPIO60        6.50                             [ns]
+rising_GPIO61         4.25                             [ns]
+falling_GPIO61        7.75                             [ns]
+rising_TS1_SYNC       4.25                             [ns]
+falling_TS1_SYNC      8.50                             [ns]
+rising_TS1_CLK        4.25                             [ns]
+falling_TS1_CLK       8.50                             [ns]
+rising_TS1_D6         4.00                             [ns]
+falling_TS1_D6        8.50                             [ns]
+rising_TS1_D7         4.00                             [ns]
+falling_TS1_D7        8.50                             [ns]
+rising_GPIO62         3.50                             [ns]
+falling_GPIO62        6.50                             [ns]
+rising_GPIO63         4.50                             [ns]
+falling_GPIO63        8.50                             [ns]
+rising_TS2_CLK        3.50                             [ns]
+falling_TS2_CLK       6.50                             [ns]
+rising_TS2_D0         4.00                             [ns]
+falling_TS2_D0        8.50                             [ns]
+rising_TS2_SYNC       3.25                             [ns]
+falling_TS2_SYNC      8.50                             [ns]
+rising_TS2_VLD        4.25                             [ns]
+falling_TS2_VLD       8.50                             [ns]
+rising_TS1_D0         3.25                             [ns]
+falling_TS1_D0        6.50                             [ns]
+rising_TS1_VLD        4.75                             [ns]
+falling_TS1_VLD       8.50                             [ns]
+
+

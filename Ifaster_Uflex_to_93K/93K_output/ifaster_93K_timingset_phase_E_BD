@@ -1,0 +1,1322 @@
+
+EQNSET 305 "ATPG_Phase_E"
+
+SPECS
+
+Period                                             [ns]
+drive_PI                                           [ns]
+strobe_PO                                          [ns]
+
+
+drive_SI_mfg_top_par_wrap_test_ck_0                [ns]
+drive_SI_vale_shader_core_wrapper_test_ck_0        [ns]
+rising_PAD_GPIO133                                 [ns]
+rising_PAD_GPIO134                                 [ns]
+rising_PAD_GPIO135                                 [ns]
+rising_PAD_GPIO137                                 [ns]
+rising_PAD_MSDC2_CMD                               [ns]
+rising_PAD_MSDC2_DSL                               [ns]
+d1_PAD_EMMC_DAT3                                   [ns]
+falling_PAD_GPIO133                                [ns]
+falling_PAD_GPIO134                                [ns]
+falling_PAD_GPIO135                                [ns]
+falling_PAD_GPIO137                                [ns]
+falling_PAD_MSDC2_CMD                              [ns]
+falling_PAD_MSDC2_DSL                              [ns]
+d2_PAD_EMMC_DAT3                                   [ns]
+strobe_SO_mfg_top_par_wrap_test_ck_0               [ns]
+strobe_SO_vale_shader_core_wrapper_test_ck_0       [ns]
+
+
+EQUATIONS
+
+TIMINGSET 1 "Phase_E_Set"
+period = Period
+
+PINS ALLPINS
+          d1 = drive_PI
+          r1 = strobe_PO
+
+PINS SI_mfg_top_par_wrap_test_ck_0
+         d1 = drive_SI_mfg_top_par_wrap_test_ck_0
+         r1 = strobe_PO
+
+PINS SI_vale_shader_core_wrapper_test_ck_0
+         d1 = drive_SI_vale_shader_core_wrapper_test_ck_0
+         r1 = strobe_PO
+
+PINS SO_mfg_top_par_wrap_test_ck_0
+         d1 = drive_PI
+         r1 = strobe_SO_mfg_top_par_wrap_test_ck_0
+
+PINS SO_vale_shader_core_wrapper_test_ck_0
+         d1 = drive_PI
+         r1 = strobe_SO_vale_shader_core_wrapper_test_ck_0
+
+PINS PAD_GPIO133
+         d1 = rising_PAD_GPIO133
+         d2 = falling_PAD_GPIO133
+
+PINS PAD_GPIO134
+         d1 = rising_PAD_GPIO134
+         d2 = falling_PAD_GPIO134
+
+PINS PAD_GPIO135
+         d1 = rising_PAD_GPIO135
+         d2 = falling_PAD_GPIO135
+
+PINS PAD_GPIO137
+         d1 = rising_PAD_GPIO137
+         d2 = falling_PAD_GPIO137
+
+PINS PAD_MSDC2_CMD
+         d1 = rising_PAD_MSDC2_CMD
+         d2 = falling_PAD_MSDC2_CMD
+
+PINS PAD_MSDC2_DSL
+         d1 = rising_PAD_MSDC2_DSL
+         d2 = falling_PAD_MSDC2_DSL
+
+PINS PAD_EMMC_DAT3
+         d1 = d1_PAD_EMMC_DAT3
+         d2 = d2_PAD_EMMC_DAT3
+
+
+
+EQNSET 305 "ATPG_Phase_E"
+
+WAVETBL "ATPG_Phase_E_type"
+
+CHECK all
+
+SPECSET 120 "ATPG_Phase_E_8.33ns_HV"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       8.33                              [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_mfg_top_par_wrap_test_ck_0          4.18       0.78       7.59        [ns]
+
+drive_SI_vale_shader_core_wrapper_test_ck_0  4.14       0.32       8.00        [ns]
+
+strobe_SO_mfg_top_par_wrap_test_ck_0         1.82       0.00       3.64        [ns]
+
+strobe_SO_vale_shader_core_wrapper_test_ck_0 1.85       0.00       3.69        [ns]
+
+rising_PAD_GPIO133                           3.00                              [ns]
+
+falling_PAD_GPIO133                          7.00                              [ns]
+
+rising_PAD_GPIO134                           3.00                              [ns]
+
+falling_PAD_GPIO134                          6.74                              [ns]
+
+rising_PAD_GPIO135                           3.00                              [ns]
+
+falling_PAD_GPIO135                          7.00                              [ns]
+
+rising_PAD_GPIO137                           2.90                              [ns]
+
+falling_PAD_GPIO137                          6.75                              [ns]
+
+rising_PAD_MSDC2_CMD                         2.41                              [ns]
+
+falling_PAD_MSDC2_CMD                        7.49                              [ns]
+
+rising_PAD_MSDC2_DSL                         3.29                              [ns]
+
+falling_PAD_MSDC2_DSL                        7.27                              [ns]
+
+d1_PAD_EMMC_DAT3                             1.00                              [ns]
+
+d2_PAD_EMMC_DAT3                             7.33                              [ns]
+
+
+SPECSET 100 "ATPG_Phase_E_10ns_HV"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       10.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_mfg_top_par_wrap_test_ck_0          5.00       0.80       9.28        [ns]
+
+drive_SI_vale_shader_core_wrapper_test_ck_0  5.00       0.31       9.63        [ns]
+
+strobe_SO_mfg_top_par_wrap_test_ck_0         2.38       0.00       4.77        [ns]
+
+strobe_SO_vale_shader_core_wrapper_test_ck_0 2.38       0.00       4.76        [ns]
+
+rising_PAD_GPIO133                           4.07                              [ns]
+
+falling_PAD_GPIO133                          8.79                              [ns]
+
+rising_PAD_GPIO134                           3.29                              [ns]
+
+falling_PAD_GPIO134                          8.39                              [ns]
+
+rising_PAD_GPIO135                           4.05                              [ns]
+
+falling_PAD_GPIO135                          8.78                              [ns]
+
+rising_PAD_GPIO137                           3.33                              [ns]
+
+falling_PAD_GPIO137                          8.41                              [ns]
+
+rising_PAD_MSDC2_CMD                         2.60                              [ns]
+
+falling_PAD_MSDC2_CMD                        8.52                              [ns]
+
+rising_PAD_MSDC2_DSL                         5.75                              [ns]
+
+falling_PAD_MSDC2_DSL                        8.91                              [ns]
+
+d1_PAD_EMMC_DAT3                             1.00                              [ns]
+
+d2_PAD_EMMC_DAT3                             9.00                              [ns]
+
+
+SPECSET 80 "ATPG_Phase_E_12.50ns_HV"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       12.50                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_mfg_top_par_wrap_test_ck_0          6.38       0.89       11.90       [ns]
+
+drive_SI_vale_shader_core_wrapper_test_ck_0  5.67       0.00       11.40       [ns]
+
+strobe_SO_mfg_top_par_wrap_test_ck_0         3.29       0.00       6.58        [ns]
+
+strobe_SO_vale_shader_core_wrapper_test_ck_0 2.41       0.00       4.83        [ns]
+
+rising_PAD_GPIO133                           4.25                              [ns]
+
+falling_PAD_GPIO133                          11.50                             [ns]
+
+rising_PAD_GPIO134                           5.10                              [ns]
+
+falling_PAD_GPIO134                          11.10                             [ns]
+
+rising_PAD_GPIO135                           2.30                              [ns]
+
+falling_PAD_GPIO135                          9.75                              [ns]
+
+rising_PAD_GPIO137                           2.60                              [ns]
+
+falling_PAD_GPIO137                          9.30                              [ns]
+
+rising_PAD_MSDC2_CMD                         2.80                              [ns]
+
+falling_PAD_MSDC2_CMD                        10.50                             [ns]
+
+rising_PAD_MSDC2_DSL                         5.92                              [ns]
+
+falling_PAD_MSDC2_DSL                        10.60                             [ns]
+
+d1_PAD_EMMC_DAT3                             1.00                              [ns]
+
+d2_PAD_EMMC_DAT3                             11.00                             [ns]
+
+
+SPECSET 60 "ATPG_Phase_E_16.70ns_HV"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       16.70                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_mfg_top_par_wrap_test_ck_0          8.08       0.51       15.70       [ns]
+
+drive_SI_vale_shader_core_wrapper_test_ck_0  7.38       0.00       14.80       [ns]
+
+strobe_SO_mfg_top_par_wrap_test_ck_0         4.26       0.00       8.52        [ns]
+
+strobe_SO_vale_shader_core_wrapper_test_ck_0 3.00       0.00       6.00        [ns]
+
+rising_PAD_GPIO133                           5.27                              [ns]
+
+falling_PAD_GPIO133                          13.90                             [ns]
+
+rising_PAD_GPIO134                           6.72                              [ns]
+
+falling_PAD_GPIO134                          14.60                             [ns]
+
+rising_PAD_GPIO135                           5.00                              [ns]
+
+falling_PAD_GPIO135                          13.70                             [ns]
+
+rising_PAD_GPIO137                           4.59                              [ns]
+
+falling_PAD_GPIO137                          13.50                             [ns]
+
+rising_PAD_MSDC2_CMD                         7.29                              [ns]
+
+falling_PAD_MSDC2_CMD                        14.90                             [ns]
+
+rising_PAD_MSDC2_DSL                         8.00                              [ns]
+
+falling_PAD_MSDC2_DSL                        15.30                             [ns]
+
+d1_PAD_EMMC_DAT3                             1.00                              [ns]
+
+d2_PAD_EMMC_DAT3                             14.70                             [ns]
+
+
+SPECSET 40 "ATPG_Phase_E_25ns_HV"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       25.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_mfg_top_par_wrap_test_ck_0          11.60      0.00       23.20       [ns]
+
+drive_SI_vale_shader_core_wrapper_test_ck_0  10.80      0.00       21.60       [ns]
+
+strobe_SO_mfg_top_par_wrap_test_ck_0         6.21       0.00       12.40       [ns]
+
+strobe_SO_vale_shader_core_wrapper_test_ck_0 4.19       0.00       8.38        [ns]
+
+rising_PAD_GPIO133                           8.40                              [ns]
+
+falling_PAD_GPIO133                          21.10                             [ns]
+
+rising_PAD_GPIO134                           7.48                              [ns]
+
+falling_PAD_GPIO134                          20.60                             [ns]
+
+rising_PAD_GPIO135                           9.45                              [ns]
+
+falling_PAD_GPIO135                          21.60                             [ns]
+
+rising_PAD_GPIO137                           7.00                              [ns]
+
+falling_PAD_GPIO137                          20.40                             [ns]
+
+rising_PAD_MSDC2_CMD                         11.20                             [ns]
+
+falling_PAD_MSDC2_CMD                        22.50                             [ns]
+
+rising_PAD_MSDC2_DSL                         12.30                             [ns]
+
+falling_PAD_MSDC2_DSL                        23.00                             [ns]
+
+d1_PAD_EMMC_DAT3                             1.00                              [ns]
+
+d2_PAD_EMMC_DAT3                             23.00                             [ns]
+
+
+SPECSET 20 "ATPG_Phase_E_50ns_HV"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       50.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_mfg_top_par_wrap_test_ck_0          23.00      0.00       46.00       [ns]
+
+drive_SI_vale_shader_core_wrapper_test_ck_0  21.00      0.00       42.00       [ns]
+
+strobe_SO_mfg_top_par_wrap_test_ck_0         12.10      0.00       24.10       [ns]
+
+strobe_SO_vale_shader_core_wrapper_test_ck_0 7.74       0.00       15.50       [ns]
+
+rising_PAD_GPIO133                           17.80                             [ns]
+
+falling_PAD_GPIO133                          42.70                             [ns]
+
+rising_PAD_GPIO134                           19.70                             [ns]
+
+falling_PAD_GPIO134                          43.60                             [ns]
+
+rising_PAD_GPIO135                           16.00                             [ns]
+
+falling_PAD_GPIO135                          41.70                             [ns]
+
+rising_PAD_GPIO137                           14.10                             [ns]
+
+falling_PAD_GPIO137                          40.80                             [ns]
+
+rising_PAD_MSDC2_CMD                         22.90                             [ns]
+
+falling_PAD_MSDC2_CMD                        45.20                             [ns]
+
+rising_PAD_MSDC2_DSL                         25.00                             [ns]
+
+falling_PAD_MSDC2_DSL                        46.20                             [ns]
+
+d1_PAD_EMMC_DAT3                             1.00                              [ns]
+
+d2_PAD_EMMC_DAT3                             45.00                             [ns]
+
+
+SPECSET 10 "ATPG_Phase_E_100ns_HV"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       100.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_mfg_top_par_wrap_test_ck_0          8.08       0.00       91.40       [ns]
+
+drive_SI_vale_shader_core_wrapper_test_ck_0  7.38       0.00       82.80       [ns]
+
+strobe_SO_mfg_top_par_wrap_test_ck_0         4.26       0.00       47.50       [ns]
+
+strobe_SO_vale_shader_core_wrapper_test_ck_0 3.00       0.00       29.70       [ns]
+
+rising_PAD_GPIO133                           5.27                              [ns]
+
+falling_PAD_GPIO133                          13.90                             [ns]
+
+rising_PAD_GPIO134                           6.72                              [ns]
+
+falling_PAD_GPIO134                          14.60                             [ns]
+
+rising_PAD_GPIO135                           5.00                              [ns]
+
+falling_PAD_GPIO135                          13.70                             [ns]
+
+rising_PAD_GPIO137                           4.59                              [ns]
+
+falling_PAD_GPIO137                          13.50                             [ns]
+
+rising_PAD_MSDC2_CMD                         7.29                              [ns]
+
+falling_PAD_MSDC2_CMD                        14.90                             [ns]
+
+rising_PAD_MSDC2_DSL                         8.00                              [ns]
+
+falling_PAD_MSDC2_DSL                        15.30                             [ns]
+
+d1_PAD_EMMC_DAT3                             1.00                              [ns]
+
+d2_PAD_EMMC_DAT3                             95.00                             [ns]
+
+
+SPECSET 120 "ATPG_Phase_E_8.33ns_MH"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       8.33                              [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_mfg_top_par_wrap_test_ck_0          4.18       0.78       7.59        [ns]
+
+drive_SI_vale_shader_core_wrapper_test_ck_0  4.14       0.32       8.00        [ns]
+
+strobe_SO_mfg_top_par_wrap_test_ck_0         1.82       0.00       3.64        [ns]
+
+strobe_SO_vale_shader_core_wrapper_test_ck_0 1.85       0.00       3.69        [ns]
+
+rising_PAD_GPIO133                           3.00                              [ns]
+
+falling_PAD_GPIO133                          7.13                              [ns]
+
+rising_PAD_GPIO134                           2.24                              [ns]
+
+falling_PAD_GPIO134                          6.74                              [ns]
+
+rising_PAD_GPIO135                           3.00                              [ns]
+
+falling_PAD_GPIO135                          7.13                              [ns]
+
+rising_PAD_GPIO137                           2.26                              [ns]
+
+falling_PAD_GPIO137                          6.75                              [ns]
+
+rising_PAD_MSDC2_CMD                         2.41                              [ns]
+
+falling_PAD_MSDC2_CMD                        6.83                              [ns]
+
+rising_PAD_MSDC2_DSL                         3.29                              [ns]
+
+falling_PAD_MSDC2_DSL                        7.27                              [ns]
+
+d1_PAD_EMMC_DAT3                             1.00                              [ns]
+
+d2_PAD_EMMC_DAT3                             7.33                              [ns]
+
+
+SPECSET 100 "ATPG_Phase_E_10ns_MH"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       10.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_mfg_top_par_wrap_test_ck_0          5.00       0.80       9.28        [ns]
+
+drive_SI_vale_shader_core_wrapper_test_ck_0  5.00       0.31       9.63        [ns]
+
+strobe_SO_mfg_top_par_wrap_test_ck_0         2.38       0.00       4.77        [ns]
+
+strobe_SO_vale_shader_core_wrapper_test_ck_0 2.38       0.00       4.76        [ns]
+
+rising_PAD_GPIO133                           4.07                              [ns]
+
+falling_PAD_GPIO133                          8.79                              [ns]
+
+rising_PAD_GPIO134                           3.29                              [ns]
+
+falling_PAD_GPIO134                          8.39                              [ns]
+
+rising_PAD_GPIO135                           4.05                              [ns]
+
+falling_PAD_GPIO135                          8.78                              [ns]
+
+rising_PAD_GPIO137                           3.33                              [ns]
+
+falling_PAD_GPIO137                          8.41                              [ns]
+
+rising_PAD_MSDC2_CMD                         3.54                              [ns]
+
+falling_PAD_MSDC2_CMD                        8.52                              [ns]
+
+rising_PAD_MSDC2_DSL                         4.31                              [ns]
+
+falling_PAD_MSDC2_DSL                        8.91                              [ns]
+
+d1_PAD_EMMC_DAT3                             1.00                              [ns]
+
+d2_PAD_EMMC_DAT3                             9.00                              [ns]
+
+
+SPECSET 80 "ATPG_Phase_E_12.50ns_MH"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       12.50                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_mfg_top_par_wrap_test_ck_0          6.38       0.89       11.90       [ns]
+
+drive_SI_vale_shader_core_wrapper_test_ck_0  5.68       0.00       11.40       [ns]
+
+strobe_SO_mfg_top_par_wrap_test_ck_0         3.29       0.00       6.58        [ns]
+
+strobe_SO_vale_shader_core_wrapper_test_ck_0 2.42       0.00       4.83        [ns]
+
+rising_PAD_GPIO133                           3.75                              [ns]
+
+falling_PAD_GPIO133                          9.75                              [ns]
+
+rising_PAD_GPIO134                           3.75                              [ns]
+
+falling_PAD_GPIO134                          10.80                             [ns]
+
+rising_PAD_GPIO135                           4.13                              [ns]
+
+falling_PAD_GPIO135                          9.75                              [ns]
+
+rising_PAD_GPIO137                           3.00                              [ns]
+
+falling_PAD_GPIO137                          8.50                              [ns]
+
+rising_PAD_MSDC2_CMD                         4.13                              [ns]
+
+falling_PAD_MSDC2_CMD                        9.00                              [ns]
+
+rising_PAD_MSDC2_DSL                         4.88                              [ns]
+
+falling_PAD_MSDC2_DSL                        11.40                             [ns]
+
+d1_PAD_EMMC_DAT3                             1.00                              [ns]
+
+d2_PAD_EMMC_DAT3                             11.00                             [ns]
+
+
+SPECSET 60 "ATPG_Phase_E_16.70ns_MH"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       16.70                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_mfg_top_par_wrap_test_ck_0          8.08       0.51       15.70       [ns]
+
+drive_SI_vale_shader_core_wrapper_test_ck_0  7.38       0.00       14.80       [ns]
+
+strobe_SO_mfg_top_par_wrap_test_ck_0         4.26       0.00       8.52        [ns]
+
+strobe_SO_vale_shader_core_wrapper_test_ck_0 3.00       0.00       6.00        [ns]
+
+rising_PAD_GPIO133                           5.27                              [ns]
+
+falling_PAD_GPIO133                          13.90                             [ns]
+
+rising_PAD_GPIO134                           6.72                              [ns]
+
+falling_PAD_GPIO134                          14.60                             [ns]
+
+rising_PAD_GPIO135                           5.00                              [ns]
+
+falling_PAD_GPIO135                          13.70                             [ns]
+
+rising_PAD_GPIO137                           4.59                              [ns]
+
+falling_PAD_GPIO137                          13.50                             [ns]
+
+rising_PAD_MSDC2_CMD                         7.29                              [ns]
+
+falling_PAD_MSDC2_CMD                        14.90                             [ns]
+
+rising_PAD_MSDC2_DSL                         8.00                              [ns]
+
+falling_PAD_MSDC2_DSL                        15.30                             [ns]
+
+d1_PAD_EMMC_DAT3                             1.00                              [ns]
+
+d2_PAD_EMMC_DAT3                             14.70                             [ns]
+
+
+SPECSET 40 "ATPG_Phase_E_25ns_MH"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       25.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_mfg_top_par_wrap_test_ck_0          11.60      0.00       23.20       [ns]
+
+drive_SI_vale_shader_core_wrapper_test_ck_0  10.80      0.00       21.60       [ns]
+
+strobe_SO_mfg_top_par_wrap_test_ck_0         6.21       0.00       12.40       [ns]
+
+strobe_SO_vale_shader_core_wrapper_test_ck_0 4.19       0.00       8.38        [ns]
+
+rising_PAD_GPIO133                           8.40                              [ns]
+
+falling_PAD_GPIO133                          21.10                             [ns]
+
+rising_PAD_GPIO134                           7.47                              [ns]
+
+falling_PAD_GPIO134                          20.60                             [ns]
+
+rising_PAD_GPIO135                           9.45                              [ns]
+
+falling_PAD_GPIO135                          21.60                             [ns]
+
+rising_PAD_GPIO137                           7.00                              [ns]
+
+falling_PAD_GPIO137                          20.40                             [ns]
+
+rising_PAD_MSDC2_CMD                         11.20                             [ns]
+
+falling_PAD_MSDC2_CMD                        22.50                             [ns]
+
+rising_PAD_MSDC2_DSL                         12.30                             [ns]
+
+falling_PAD_MSDC2_DSL                        23.00                             [ns]
+
+d1_PAD_EMMC_DAT3                             1.00                              [ns]
+
+d2_PAD_EMMC_DAT3                             23.00                             [ns]
+
+
+SPECSET 20 "ATPG_Phase_E_50ns_MH"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       50.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_mfg_top_par_wrap_test_ck_0          23.00      0.00       46.00       [ns]
+
+drive_SI_vale_shader_core_wrapper_test_ck_0  21.00      0.00       42.00       [ns]
+
+strobe_SO_mfg_top_par_wrap_test_ck_0         12.10      0.00       24.10       [ns]
+
+strobe_SO_vale_shader_core_wrapper_test_ck_0 7.74       0.00       15.50       [ns]
+
+rising_PAD_GPIO133                           17.80                             [ns]
+
+falling_PAD_GPIO133                          42.70                             [ns]
+
+rising_PAD_GPIO134                           19.70                             [ns]
+
+falling_PAD_GPIO134                          43.60                             [ns]
+
+rising_PAD_GPIO135                           16.00                             [ns]
+
+falling_PAD_GPIO135                          41.70                             [ns]
+
+rising_PAD_GPIO137                           14.10                             [ns]
+
+falling_PAD_GPIO137                          40.80                             [ns]
+
+rising_PAD_MSDC2_CMD                         22.90                             [ns]
+
+falling_PAD_MSDC2_CMD                        45.20                             [ns]
+
+rising_PAD_MSDC2_DSL                         25.00                             [ns]
+
+falling_PAD_MSDC2_DSL                        46.20                             [ns]
+
+d1_PAD_EMMC_DAT3                             1.00                              [ns]
+
+d2_PAD_EMMC_DAT3                             45.00                             [ns]
+
+
+SPECSET 10 "ATPG_Phase_E_100ns_MH"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       100.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_mfg_top_par_wrap_test_ck_0          45.70      0.00       91.40       [ns]
+
+drive_SI_vale_shader_core_wrapper_test_ck_0  41.40      0.00       82.80       [ns]
+
+strobe_SO_mfg_top_par_wrap_test_ck_0         23.80      0.00       47.50       [ns]
+
+strobe_SO_vale_shader_core_wrapper_test_ck_0 14.80      0.00       29.70       [ns]
+
+rising_PAD_GPIO133                           36.60                             [ns]
+
+falling_PAD_GPIO133                          85.80                             [ns]
+
+rising_PAD_GPIO134                           40.80                             [ns]
+
+falling_PAD_GPIO134                          87.90                             [ns]
+
+rising_PAD_GPIO135                           32.50                             [ns]
+
+falling_PAD_GPIO135                          83.70                             [ns]
+
+rising_PAD_GPIO137                           28.30                             [ns]
+
+falling_PAD_GPIO137                          81.60                             [ns]
+
+rising_PAD_MSDC2_CMD                         46.30                             [ns]
+
+falling_PAD_MSDC2_CMD                        90.60                             [ns]
+
+rising_PAD_MSDC2_DSL                         50.40                             [ns]
+
+falling_PAD_MSDC2_DSL                        92.70                             [ns]
+
+d1_PAD_EMMC_DAT3                             1.00                              [ns]
+
+d2_PAD_EMMC_DAT3                             95.00                             [ns]
+
+
+SPECSET 120 "ATPG_Phase_E_8.33ns_ML"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       8.33                              [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_mfg_top_par_wrap_test_ck_0          4.18       0.78       7.59        [ns]
+
+drive_SI_vale_shader_core_wrapper_test_ck_0  4.13       0.31       8.00        [ns]
+
+strobe_SO_mfg_top_par_wrap_test_ck_0         1.82       0.00       3.64        [ns]
+
+strobe_SO_vale_shader_core_wrapper_test_ck_0 1.84       0.00       3.67        [ns]
+
+rising_PAD_GPIO133                           3.00                              [ns]
+
+falling_PAD_GPIO133                          7.11                              [ns]
+
+rising_PAD_GPIO134                           3.24                              [ns]
+
+falling_PAD_GPIO134                          7.24                              [ns]
+
+rising_PAD_GPIO135                           2.46                              [ns]
+
+falling_PAD_GPIO135                          6.85                              [ns]
+
+rising_PAD_GPIO137                           2.24                              [ns]
+
+falling_PAD_GPIO137                          6.74                              [ns]
+
+rising_PAD_MSDC2_CMD                         2.41                              [ns]
+
+falling_PAD_MSDC2_CMD                        6.83                              [ns]
+
+rising_PAD_MSDC2_DSL                         3.32                              [ns]
+
+falling_PAD_MSDC2_DSL                        7.28                              [ns]
+
+d1_PAD_EMMC_DAT3                             1.00                              [ns]
+
+d2_PAD_EMMC_DAT3                             7.33                              [ns]
+
+
+SPECSET 100 "ATPG_Phase_E_10ns_ML"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       10.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_mfg_top_par_wrap_test_ck_0          5.00       0.80       9.28        [ns]
+
+drive_SI_vale_shader_core_wrapper_test_ck_0  5.00       0.30       9.62        [ns]
+
+strobe_SO_mfg_top_par_wrap_test_ck_0         2.38       0.00       4.77        [ns]
+
+strobe_SO_vale_shader_core_wrapper_test_ck_0 2.37       0.00       4.74        [ns]
+
+rising_PAD_GPIO133                           4.05                              [ns]
+
+falling_PAD_GPIO133                          8.77                              [ns]
+
+rising_PAD_GPIO134                           3.22                              [ns]
+
+falling_PAD_GPIO134                          8.36                              [ns]
+
+rising_PAD_GPIO135                           2.93                              [ns]
+
+falling_PAD_GPIO135                          8.22                              [ns]
+
+rising_PAD_GPIO137                           3.31                              [ns]
+
+falling_PAD_GPIO137                          8.40                              [ns]
+
+rising_PAD_MSDC2_CMD                         3.54                              [ns]
+
+falling_PAD_MSDC2_CMD                        8.52                              [ns]
+
+rising_PAD_MSDC2_DSL                         4.35                              [ns]
+
+falling_PAD_MSDC2_DSL                        8.92                              [ns]
+
+d1_PAD_EMMC_DAT3                             1.00                              [ns]
+
+d2_PAD_EMMC_DAT3                             9.00                              [ns]
+
+
+SPECSET 80 "ATPG_Phase_E_12.50ns_ML"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       12.50                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_mfg_top_par_wrap_test_ck_0          6.38       0.89       11.90       [ns]
+
+drive_SI_vale_shader_core_wrapper_test_ck_0  5.68       0.00       11.40       [ns]
+
+strobe_SO_mfg_top_par_wrap_test_ck_0         3.29       0.00       6.58        [ns]
+
+strobe_SO_vale_shader_core_wrapper_test_ck_0 2.42       0.00       4.83        [ns]
+
+rising_PAD_GPIO133                           3.67                              [ns]
+
+falling_PAD_GPIO133                          10.30                             [ns]
+
+rising_PAD_GPIO134                           3.75                              [ns]
+
+falling_PAD_GPIO134                          10.90                             [ns]
+
+rising_PAD_GPIO135                           4.13                              [ns]
+
+falling_PAD_GPIO135                          9.75                              [ns]
+
+rising_PAD_GPIO137                           3.00                              [ns]
+
+falling_PAD_GPIO137                          8.50                              [ns]
+
+rising_PAD_MSDC2_CMD                         4.13                              [ns]
+
+falling_PAD_MSDC2_CMD                        9.00                              [ns]
+
+rising_PAD_MSDC2_DSL                         4.88                              [ns]
+
+falling_PAD_MSDC2_DSL                        12.00                             [ns]
+
+d1_PAD_EMMC_DAT3                             1.00                              [ns]
+
+d2_PAD_EMMC_DAT3                             11.00                             [ns]
+
+
+SPECSET 60 "ATPG_Phase_E_16.70ns_ML"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       16.70                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_mfg_top_par_wrap_test_ck_0          8.08       0.51       15.70       [ns]
+
+drive_SI_vale_shader_core_wrapper_test_ck_0  7.37       0.00       14.80       [ns]
+
+strobe_SO_mfg_top_par_wrap_test_ck_0         4.26       0.00       8.52        [ns]
+
+strobe_SO_vale_shader_core_wrapper_test_ck_0 3.00       0.00       6.00        [ns]
+
+rising_PAD_GPIO133                           5.23                              [ns]
+
+falling_PAD_GPIO133                          13.90                             [ns]
+
+rising_PAD_GPIO134                           6.66                              [ns]
+
+falling_PAD_GPIO134                          14.60                             [ns]
+
+rising_PAD_GPIO135                           5.00                              [ns]
+
+falling_PAD_GPIO135                          13.70                             [ns]
+
+rising_PAD_GPIO137                           4.58                              [ns]
+
+falling_PAD_GPIO137                          13.50                             [ns]
+
+rising_PAD_MSDC2_CMD                         7.29                              [ns]
+
+falling_PAD_MSDC2_CMD                        14.90                             [ns]
+
+rising_PAD_MSDC2_DSL                         8.05                              [ns]
+
+falling_PAD_MSDC2_DSL                        15.30                             [ns]
+
+d1_PAD_EMMC_DAT3                             1.00                              [ns]
+
+d2_PAD_EMMC_DAT3                             14.70                             [ns]
+
+
+SPECSET 40 "ATPG_Phase_E_25ns_ML"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       25.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_mfg_top_par_wrap_test_ck_0          11.60      0.00       23.20       [ns]
+
+drive_SI_vale_shader_core_wrapper_test_ck_0  10.80      0.00       21.60       [ns]
+
+strobe_SO_mfg_top_par_wrap_test_ck_0         6.21       0.00       12.40       [ns]
+
+strobe_SO_vale_shader_core_wrapper_test_ck_0 4.19       0.00       8.38        [ns]
+
+rising_PAD_GPIO133                           8.37                              [ns]
+
+falling_PAD_GPIO133                          21.10                             [ns]
+
+rising_PAD_GPIO134                           9.15                              [ns]
+
+falling_PAD_GPIO134                          21.50                             [ns]
+
+rising_PAD_GPIO135                           7.72                              [ns]
+
+falling_PAD_GPIO135                          20.70                             [ns]
+
+rising_PAD_GPIO137                           7.00                              [ns]
+
+falling_PAD_GPIO137                          20.40                             [ns]
+
+rising_PAD_MSDC2_CMD                         8.00                              [ns]
+
+falling_PAD_MSDC2_CMD                        22.50                             [ns]
+
+rising_PAD_MSDC2_DSL                         12.30                             [ns]
+
+falling_PAD_MSDC2_DSL                        23.00                             [ns]
+
+d1_PAD_EMMC_DAT3                             1.00                              [ns]
+
+d2_PAD_EMMC_DAT3                             23.00                             [ns]
+
+
+SPECSET 20 "ATPG_Phase_E_50ns_ML"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       50.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_mfg_top_par_wrap_test_ck_0          23.00      0.00       46.00       [ns]
+
+drive_SI_vale_shader_core_wrapper_test_ck_0  21.00      0.00       42.00       [ns]
+
+strobe_SO_mfg_top_par_wrap_test_ck_0         12.10      0.00       24.10       [ns]
+
+strobe_SO_vale_shader_core_wrapper_test_ck_0 7.74       0.00       15.50       [ns]
+
+rising_PAD_GPIO133                           17.80                             [ns]
+
+falling_PAD_GPIO133                          42.60                             [ns]
+
+rising_PAD_GPIO134                           19.70                             [ns]
+
+falling_PAD_GPIO134                          43.60                             [ns]
+
+rising_PAD_GPIO135                           16.00                             [ns]
+
+falling_PAD_GPIO135                          41.70                             [ns]
+
+rising_PAD_GPIO137                           14.00                             [ns]
+
+falling_PAD_GPIO137                          40.80                             [ns]
+
+rising_PAD_MSDC2_CMD                         22.90                             [ns]
+
+falling_PAD_MSDC2_CMD                        45.20                             [ns]
+
+rising_PAD_MSDC2_DSL                         25.00                             [ns]
+
+falling_PAD_MSDC2_DSL                        46.30                             [ns]
+
+d1_PAD_EMMC_DAT3                             1.00                              [ns]
+
+d2_PAD_EMMC_DAT3                             45.00                             [ns]
+
+
+SPECSET 10 "ATPG_Phase_E_100ns_ML"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       100.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_mfg_top_par_wrap_test_ck_0          45.70      0.00       91.40       [ns]
+
+drive_SI_vale_shader_core_wrapper_test_ck_0  41.40      0.00       82.80       [ns]
+
+strobe_SO_mfg_top_par_wrap_test_ck_0         23.80      0.00       47.50       [ns]
+
+strobe_SO_vale_shader_core_wrapper_test_ck_0 14.80      0.00       29.70       [ns]
+
+rising_PAD_GPIO133                           36.60                             [ns]
+
+falling_PAD_GPIO133                          85.80                             [ns]
+
+rising_PAD_GPIO134                           40.80                             [ns]
+
+falling_PAD_GPIO134                          87.90                             [ns]
+
+rising_PAD_GPIO135                           32.50                             [ns]
+
+falling_PAD_GPIO135                          83.70                             [ns]
+
+rising_PAD_GPIO137                           28.20                             [ns]
+
+falling_PAD_GPIO137                          81.60                             [ns]
+
+rising_PAD_MSDC2_CMD                         50.00                             [ns]
+
+falling_PAD_MSDC2_CMD                        90.60                             [ns]
+
+rising_PAD_MSDC2_DSL                         50.50                             [ns]
+
+falling_PAD_MSDC2_DSL                        92.70                             [ns]
+
+d1_PAD_EMMC_DAT3                             1.00                              [ns]
+
+d2_PAD_EMMC_DAT3                             95.00                             [ns]
+
+
+SPECSET 120 "ATPG_Phase_E_8.33ns_LV"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       8.33                              [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_mfg_top_par_wrap_test_ck_0          4.18       0.78       7.59        [ns]
+
+drive_SI_vale_shader_core_wrapper_test_ck_0  4.12       0.29       7.94        [ns]
+
+strobe_SO_mfg_top_par_wrap_test_ck_0         1.82       0.00       3.64        [ns]
+
+strobe_SO_vale_shader_core_wrapper_test_ck_0 1.82       0.00       3.64        [ns]
+
+rising_PAD_GPIO133                           2.90                              [ns]
+
+falling_PAD_GPIO133                          7.07                              [ns]
+
+rising_PAD_GPIO134                           3.20                              [ns]
+
+falling_PAD_GPIO134                          7.22                              [ns]
+
+rising_PAD_GPIO135                           1.81                              [ns]
+
+falling_PAD_GPIO135                          6.53                              [ns]
+
+rising_PAD_GPIO137                           2.20                              [ns]
+
+falling_PAD_GPIO137                          6.72                              [ns]
+
+rising_PAD_MSDC2_CMD                         2.41                              [ns]
+
+falling_PAD_MSDC2_CMD                        6.83                              [ns]
+
+rising_PAD_MSDC2_DSL                         3.39                              [ns]
+
+falling_PAD_MSDC2_DSL                        7.32                              [ns]
+
+d1_PAD_EMMC_DAT3                             1.00                              [ns]
+
+d2_PAD_EMMC_DAT3                             7.33                              [ns]
+
+
+SPECSET 100 "ATPG_Phase_E_10ns_LV"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       10.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_mfg_top_par_wrap_test_ck_0          5.00       0.80       9.28        [ns]
+
+drive_SI_vale_shader_core_wrapper_test_ck_0  4.94       0.28       9.60        [ns]
+
+strobe_SO_mfg_top_par_wrap_test_ck_0         2.38       0.00       4.77        [ns]
+
+strobe_SO_vale_shader_core_wrapper_test_ck_0 2.35       0.00       4.70        [ns]
+
+rising_PAD_GPIO133                           3.65                              [ns]
+
+falling_PAD_GPIO133                          8.74                              [ns]
+
+rising_PAD_GPIO134                           4.20                              [ns]
+
+falling_PAD_GPIO134                          8.85                              [ns]
+
+rising_PAD_GPIO135                           3.45                              [ns]
+
+falling_PAD_GPIO135                          8.48                              [ns]
+
+rising_PAD_GPIO137                           3.27                              [ns]
+
+falling_PAD_GPIO137                          8.38                              [ns]
+
+rising_PAD_MSDC2_CMD                         2.90                              [ns]
+
+falling_PAD_MSDC2_CMD                        8.52                              [ns]
+
+rising_PAD_MSDC2_DSL                         5.50                              [ns]
+
+falling_PAD_MSDC2_DSL                        9.00                              [ns]
+
+d1_PAD_EMMC_DAT3                             1.00                              [ns]
+
+d2_PAD_EMMC_DAT3                             9.00                              [ns]
+
+
+SPECSET 80 "ATPG_Phase_E_12.50ns_LV"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       12.50                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_mfg_top_par_wrap_test_ck_0          6.38       0.89       11.90       [ns]
+
+drive_SI_vale_shader_core_wrapper_test_ck_0  5.67       0.00       11.40       [ns]
+
+strobe_SO_mfg_top_par_wrap_test_ck_0         3.29       0.00       6.58        [ns]
+
+strobe_SO_vale_shader_core_wrapper_test_ck_0 2.41       0.00       4.82        [ns]
+
+rising_PAD_GPIO133                           2.50                              [ns]
+
+falling_PAD_GPIO133                          8.40                              [ns]
+
+rising_PAD_GPIO134                           3.75                              [ns]
+
+falling_PAD_GPIO134                          10.90                             [ns]
+
+rising_PAD_GPIO135                           5.10                              [ns]
+
+falling_PAD_GPIO135                          12.00                             [ns]
+
+rising_PAD_GPIO137                           2.20                              [ns]
+
+falling_PAD_GPIO137                          7.70                              [ns]
+
+rising_PAD_MSDC2_CMD                         3.38                              [ns]
+
+falling_PAD_MSDC2_CMD                        8.25                              [ns]
+
+rising_PAD_MSDC2_DSL                         3.75                              [ns]
+
+falling_PAD_MSDC2_DSL                        12.40                             [ns]
+
+d1_PAD_EMMC_DAT3                             1.00                              [ns]
+
+d2_PAD_EMMC_DAT3                             11.00                             [ns]
+
+
+SPECSET 60 "ATPG_Phase_E_16.70ns_LV"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       16.70                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_mfg_top_par_wrap_test_ck_0          8.08       0.51       15.70       [ns]
+
+drive_SI_vale_shader_core_wrapper_test_ck_0  7.37       0.00       14.80       [ns]
+
+strobe_SO_mfg_top_par_wrap_test_ck_0         4.26       0.00       8.52        [ns]
+
+strobe_SO_vale_shader_core_wrapper_test_ck_0 3.00       0.00       6.00        [ns]
+
+rising_PAD_GPIO133                           5.17                              [ns]
+
+falling_PAD_GPIO133                          13.80                             [ns]
+
+rising_PAD_GPIO134                           7.62                              [ns]
+
+falling_PAD_GPIO134                          15.10                             [ns]
+
+rising_PAD_GPIO135                           6.91                              [ns]
+
+falling_PAD_GPIO135                          14.70                             [ns]
+
+rising_PAD_GPIO137                           4.58                              [ns]
+
+falling_PAD_GPIO137                          13.50                             [ns]
+
+rising_PAD_MSDC2_CMD                         7.29                              [ns]
+
+falling_PAD_MSDC2_CMD                        14.90                             [ns]
+
+rising_PAD_MSDC2_DSL                         8.12                              [ns]
+
+falling_PAD_MSDC2_DSL                        15.30                             [ns]
+
+d1_PAD_EMMC_DAT3                             1.00                              [ns]
+
+d2_PAD_EMMC_DAT3                             14.70                             [ns]
+
+
+SPECSET 40 "ATPG_Phase_E_25ns_LV"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       25.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_mfg_top_par_wrap_test_ck_0          11.60      0.00       23.20       [ns]
+
+drive_SI_vale_shader_core_wrapper_test_ck_0  10.80      0.00       21.60       [ns]
+
+strobe_SO_mfg_top_par_wrap_test_ck_0         6.21       0.00       12.40       [ns]
+
+strobe_SO_vale_shader_core_wrapper_test_ck_0 4.19       0.00       8.37        [ns]
+
+rising_PAD_GPIO133                           8.31                              [ns]
+
+falling_PAD_GPIO133                          21.00                             [ns]
+
+rising_PAD_GPIO134                           9.08                              [ns]
+
+falling_PAD_GPIO134                          21.40                             [ns]
+
+rising_PAD_GPIO135                           7.70                              [ns]
+
+falling_PAD_GPIO135                          20.70                             [ns]
+
+rising_PAD_GPIO137                           6.94                              [ns]
+
+falling_PAD_GPIO137                          20.40                             [ns]
+
+rising_PAD_MSDC2_CMD                         8.00                              [ns]
+
+falling_PAD_MSDC2_CMD                        22.50                             [ns]
+
+rising_PAD_MSDC2_DSL                         12.40                             [ns]
+
+falling_PAD_MSDC2_DSL                        23.10                             [ns]
+
+d1_PAD_EMMC_DAT3                             1.00                              [ns]
+
+d2_PAD_EMMC_DAT3                             23.00                             [ns]
+
+
+SPECSET 20 "ATPG_Phase_E_50ns_LV"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       50.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_mfg_top_par_wrap_test_ck_0          23.00      0.00       46.00       [ns]
+
+drive_SI_vale_shader_core_wrapper_test_ck_0  21.00      0.00       42.00       [ns]
+
+strobe_SO_mfg_top_par_wrap_test_ck_0         12.10      0.00       24.10       [ns]
+
+strobe_SO_vale_shader_core_wrapper_test_ck_0 7.74       0.00       15.50       [ns]
+
+rising_PAD_GPIO133                           17.70                             [ns]
+
+falling_PAD_GPIO133                          42.60                             [ns]
+
+rising_PAD_GPIO134                           19.60                             [ns]
+
+falling_PAD_GPIO134                          43.60                             [ns]
+
+rising_PAD_GPIO135                           16.00                             [ns]
+
+falling_PAD_GPIO135                          41.70                             [ns]
+
+rising_PAD_GPIO137                           14.00                             [ns]
+
+falling_PAD_GPIO137                          40.80                             [ns]
+
+rising_PAD_MSDC2_CMD                         22.90                             [ns]
+
+falling_PAD_MSDC2_CMD                        45.20                             [ns]
+
+rising_PAD_MSDC2_DSL                         25.10                             [ns]
+
+falling_PAD_MSDC2_DSL                        46.30                             [ns]
+
+d1_PAD_EMMC_DAT3                             1.00                              [ns]
+
+d2_PAD_EMMC_DAT3                             45.00                             [ns]
+
+
+SPECSET 10 "ATPG_Phase_E_100ns_LV"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       100.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_mfg_top_par_wrap_test_ck_0          8.08       0.00       91.40       [ns]
+
+drive_SI_vale_shader_core_wrapper_test_ck_0  7.37       0.00       82.80       [ns]
+
+strobe_SO_mfg_top_par_wrap_test_ck_0         4.26       0.00       47.50       [ns]
+
+strobe_SO_vale_shader_core_wrapper_test_ck_0 3.00       0.00       29.70       [ns]
+
+rising_PAD_GPIO133                           5.17                              [ns]
+
+falling_PAD_GPIO133                          13.80                             [ns]
+
+rising_PAD_GPIO134                           7.62                              [ns]
+
+falling_PAD_GPIO134                          15.10                             [ns]
+
+rising_PAD_GPIO135                           6.91                              [ns]
+
+falling_PAD_GPIO135                          14.70                             [ns]
+
+rising_PAD_GPIO137                           4.58                              [ns]
+
+falling_PAD_GPIO137                          13.50                             [ns]
+
+rising_PAD_MSDC2_CMD                         7.29                              [ns]
+
+falling_PAD_MSDC2_CMD                        14.90                             [ns]
+
+rising_PAD_MSDC2_DSL                         8.12                              [ns]
+
+falling_PAD_MSDC2_DSL                        15.30                             [ns]
+
+d1_PAD_EMMC_DAT3                             1.00                              [ns]
+
+d2_PAD_EMMC_DAT3                             95.00                             [ns]
+

@@ -1,0 +1,1558 @@
+
+EQNSET 301 "ATPG_Phase_A"
+
+SPECS
+
+Period                                             [ns]
+drive_PI                                           [ns]
+strobe_PO                                          [ns]
+
+
+drive_SI_chip_top_test_ck_0                        [ns]
+drive_SI_infra_top_test_ck_1                       [ns]
+rising_PAD_GPIO133                                 [ns]
+rising_PAD_GPIO134                                 [ns]
+rising_PAD_GPIO135                                 [ns]
+rising_PAD_GPIO136                                 [ns]
+rising_PAD_GPIO137                                 [ns]
+rising_PAD_TDMIN_BCK                               [ns]
+rising_PAD_TDMIN_DI                                [ns]
+rising_PAD_TDMIN_LRCK                              [ns]
+rising_PAD_TDMIN_MCLK                              [ns]
+falling_PAD_GPIO133                                [ns]
+falling_PAD_GPIO134                                [ns]
+falling_PAD_GPIO135                                [ns]
+falling_PAD_GPIO136                                [ns]
+falling_PAD_GPIO137                                [ns]
+falling_PAD_TDMIN_BCK                              [ns]
+falling_PAD_TDMIN_DI                               [ns]
+falling_PAD_TDMIN_LRCK                             [ns]
+falling_PAD_TDMIN_MCLK                             [ns]
+strobe_SO_chip_top_test_ck_0                       [ns]
+strobe_SO_infra_top_test_ck_1                      [ns]
+
+
+EQUATIONS
+
+TIMINGSET 1 "Phase_A_Set"
+period = Period
+
+PINS ALLPINS
+          d1 = drive_PI
+          r1 = strobe_PO
+
+PINS SI_chip_top_test_ck_0
+         d1 = drive_SI_chip_top_test_ck_0
+         r1 = strobe_PO
+
+PINS SI_infra_top_test_ck_1
+         d1 = drive_SI_infra_top_test_ck_1
+         r1 = strobe_PO
+
+PINS SO_chip_top_test_ck_0
+         d1 = drive_PI
+         r1 = strobe_SO_chip_top_test_ck_0
+
+PINS SO_infra_top_test_ck_1
+         d1 = drive_PI
+         r1 = strobe_SO_infra_top_test_ck_1
+
+PINS PAD_GPIO133
+         d1 = rising_PAD_GPIO133
+         d2 = falling_PAD_GPIO133
+
+PINS PAD_GPIO134
+         d1 = rising_PAD_GPIO134
+         d2 = falling_PAD_GPIO134
+
+PINS PAD_GPIO135
+         d1 = rising_PAD_GPIO135
+         d2 = falling_PAD_GPIO135
+
+PINS PAD_GPIO136
+         d1 = rising_PAD_GPIO136
+         d2 = falling_PAD_GPIO136
+
+PINS PAD_GPIO137
+         d1 = rising_PAD_GPIO137
+         d2 = falling_PAD_GPIO137
+
+PINS PAD_TDMIN_BCK
+         d1 = rising_PAD_TDMIN_BCK
+         d2 = falling_PAD_TDMIN_BCK
+
+PINS PAD_TDMIN_DI
+         d1 = rising_PAD_TDMIN_DI
+         d2 = falling_PAD_TDMIN_DI
+
+PINS PAD_TDMIN_LRCK
+         d1 = rising_PAD_TDMIN_LRCK
+         d2 = falling_PAD_TDMIN_LRCK
+
+PINS PAD_TDMIN_MCLK
+         d1 = rising_PAD_TDMIN_MCLK
+         d2 = falling_PAD_TDMIN_MCLK
+
+
+
+EQNSET 301 "ATPG_Phase_A"
+
+WAVETBL "ATPG_Phase_A_type"
+
+CHECK all
+
+SPECSET 120 "ATPG_Phase_A_8.33ns_HV"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       8.33                              [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  0.0                               [ns]
+
+drive_SI_infra_top_test_ck_1                 0.0                               [ns]
+
+strobe_SO_chip_top_test_ck_0                 0.0                               [ns]
+
+strobe_SO_infra_top_test_ck_1                0.0                               [ns]
+
+rising_PAD_GPIO133                           0.0                               [ns]
+
+falling_PAD_GPIO133                          0.0                               [ns]
+
+rising_PAD_GPIO134                           0.0                               [ns]
+
+falling_PAD_GPIO134                          0.0                               [ns]
+
+rising_PAD_GPIO135                           0.0                               [ns]
+
+falling_PAD_GPIO135                          0.0                               [ns]
+
+rising_PAD_GPIO136                           0.0                               [ns]
+
+falling_PAD_GPIO136                          0.0                               [ns]
+
+rising_PAD_GPIO137                           0.0                               [ns]
+
+falling_PAD_GPIO137                          0.0                               [ns]
+
+rising_PAD_TDMIN_BCK                         0.0                               [ns]
+
+falling_PAD_TDMIN_BCK                        0.0                               [ns]
+
+rising_PAD_TDMIN_DI                          0.0                               [ns]
+
+falling_PAD_TDMIN_DI                         0.0                               [ns]
+
+rising_PAD_TDMIN_LRCK                        0.0                               [ns]
+
+falling_PAD_TDMIN_LRCK                       0.0                               [ns]
+
+rising_PAD_TDMIN_MCLK                        0.0                               [ns]
+
+falling_PAD_TDMIN_MCLK                       0.0                               [ns]
+
+
+SPECSET 100 "ATPG_Phase_A_10ns_HV"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       10.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  2.14       0.00       4.28        [ns]
+
+drive_SI_infra_top_test_ck_1                 2.59       0.00       5.17        [ns]
+
+strobe_SO_chip_top_test_ck_0                 2.91       0.00       5.83        [ns]
+
+strobe_SO_infra_top_test_ck_1                2.78       0.00       5.57        [ns]
+
+rising_PAD_GPIO133                           3.60                              [ns]
+
+falling_PAD_GPIO133                          8.87                              [ns]
+
+rising_PAD_GPIO134                           5.40                              [ns]
+
+falling_PAD_GPIO134                          8.44                              [ns]
+
+rising_PAD_GPIO135                           5.40                              [ns]
+
+falling_PAD_GPIO135                          8.42                              [ns]
+
+rising_PAD_GPIO136                           5.10                              [ns]
+
+falling_PAD_GPIO136                          8.82                              [ns]
+
+rising_PAD_GPIO137                           5.70                              [ns]
+
+falling_PAD_GPIO137                          8.91                              [ns]
+
+rising_PAD_TDMIN_BCK                         4.20                              [ns]
+
+falling_PAD_TDMIN_BCK                        7.66                              [ns]
+
+rising_PAD_TDMIN_DI                          4.65                              [ns]
+
+falling_PAD_TDMIN_DI                         9.07                              [ns]
+
+rising_PAD_TDMIN_LRCK                        4.80                              [ns]
+
+falling_PAD_TDMIN_LRCK                       8.15                              [ns]
+
+rising_PAD_TDMIN_MCLK                        4.25                              [ns]
+
+falling_PAD_TDMIN_MCLK                       8.87                              [ns]
+
+
+SPECSET 80 "ATPG_Phase_A_12.50ns_HV"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       12.50                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  2.67       0.00       5.34        [ns]
+
+drive_SI_infra_top_test_ck_1                 3.00       0.00       6.00        [ns]
+
+strobe_SO_chip_top_test_ck_0                 3.44       0.00       6.89        [ns]
+
+strobe_SO_infra_top_test_ck_1                4.13       0.00       6.43        [ns]
+
+rising_PAD_GPIO133                           4.40                              [ns]
+
+falling_PAD_GPIO133                          9.75                              [ns]
+
+rising_PAD_GPIO134                           6.10                              [ns]
+
+falling_PAD_GPIO134                          10.40                             [ns]
+
+rising_PAD_GPIO135                           6.30                              [ns]
+
+falling_PAD_GPIO135                          10.80                             [ns]
+
+rising_PAD_GPIO136                           6.38                              [ns]
+
+falling_PAD_GPIO136                          11.10                             [ns]
+
+rising_PAD_GPIO137                           6.30                              [ns]
+
+falling_PAD_GPIO137                          11.00                             [ns]
+
+rising_PAD_TDMIN_BCK                         5.50                              [ns]
+
+falling_PAD_TDMIN_BCK                        9.88                              [ns]
+
+rising_PAD_TDMIN_DI                          6.75                              [ns]
+
+falling_PAD_TDMIN_DI                         11.50                             [ns]
+
+rising_PAD_TDMIN_LRCK                        5.71                              [ns]
+
+falling_PAD_TDMIN_LRCK                       10.70                             [ns]
+
+rising_PAD_TDMIN_MCLK                        6.00                              [ns]
+
+falling_PAD_TDMIN_MCLK                       10.00                             [ns]
+
+
+SPECSET 60 "ATPG_Phase_A_16.70ns_HV"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       16.70                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  3.55       0.00       7.10        [ns]
+
+drive_SI_infra_top_test_ck_1                 4.10       0.00       8.19        [ns]
+
+strobe_SO_chip_top_test_ck_0                 4.33       0.00       8.65        [ns]
+
+strobe_SO_infra_top_test_ck_1                4.30       0.00       8.59        [ns]
+
+rising_PAD_GPIO133                           7.27                              [ns]
+
+falling_PAD_GPIO133                          14.90                             [ns]
+
+rising_PAD_GPIO134                           7.62                              [ns]
+
+falling_PAD_GPIO134                          14.30                             [ns]
+
+rising_PAD_GPIO135                           7.52                              [ns]
+
+falling_PAD_GPIO135                          14.20                             [ns]
+
+rising_PAD_GPIO136                           7.64                              [ns]
+
+falling_PAD_GPIO136                          15.10                             [ns]
+
+rising_PAD_GPIO137                           8.25                              [ns]
+
+falling_PAD_GPIO137                          15.90                             [ns]
+
+rising_PAD_TDMIN_BCK                         6.78                              [ns]
+
+falling_PAD_TDMIN_BCK                        13.50                             [ns]
+
+rising_PAD_TDMIN_DI                          8.07                              [ns]
+
+falling_PAD_TDMIN_DI                         15.30                             [ns]
+
+rising_PAD_TDMIN_LRCK                        7.68                              [ns]
+
+falling_PAD_TDMIN_LRCK                       14.30                             [ns]
+
+rising_PAD_TDMIN_MCLK                        7.08                              [ns]
+
+falling_PAD_TDMIN_MCLK                       14.80                             [ns]
+
+
+SPECSET 40 "ATPG_Phase_A_25ns_HV"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       25.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  5.33       0.00       10.70       [ns]
+
+drive_SI_infra_top_test_ck_1                 6.26       0.00       12.50       [ns]
+
+strobe_SO_chip_top_test_ck_0                 6.10       0.00       12.20       [ns]
+
+strobe_SO_infra_top_test_ck_1                6.45       0.00       12.90       [ns]
+
+rising_PAD_GPIO133                           11.60                             [ns]
+
+falling_PAD_GPIO133                          22.70                             [ns]
+
+rising_PAD_GPIO134                           12.00                             [ns]
+
+falling_PAD_GPIO134                          22.00                             [ns]
+
+rising_PAD_GPIO135                           12.40                             [ns]
+
+falling_PAD_GPIO135                          22.40                             [ns]
+
+rising_PAD_GPIO136                           12.20                             [ns]
+
+falling_PAD_GPIO136                          23.00                             [ns]
+
+rising_PAD_GPIO137                           12.70                             [ns]
+
+falling_PAD_GPIO137                          22.70                             [ns]
+
+rising_PAD_TDMIN_BCK                         10.60                             [ns]
+
+falling_PAD_TDMIN_BCK                        20.60                             [ns]
+
+rising_PAD_TDMIN_DI                          12.10                             [ns]
+
+falling_PAD_TDMIN_DI                         22.90                             [ns]
+
+rising_PAD_TDMIN_LRCK                        10.80                             [ns]
+
+falling_PAD_TDMIN_LRCK                       20.80                             [ns]
+
+rising_PAD_TDMIN_MCLK                        10.60                             [ns]
+
+falling_PAD_TDMIN_MCLK                       22.20                             [ns]
+
+
+SPECSET 20 "ATPG_Phase_A_50ns_HV"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       50.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  10.60      0.00       21.30       [ns]
+
+drive_SI_infra_top_test_ck_1                 9.32       0.00       18.60       [ns]
+
+strobe_SO_chip_top_test_ck_0                 11.40      0.00       22.80       [ns]
+
+strobe_SO_infra_top_test_ck_1                9.52       0.00       19.00       [ns]
+
+rising_PAD_GPIO133                           17.70                             [ns]
+
+falling_PAD_GPIO133                          42.60                             [ns]
+
+rising_PAD_GPIO134                           18.50                             [ns]
+
+falling_PAD_GPIO134                          38.50                             [ns]
+
+rising_PAD_GPIO135                           21.90                             [ns]
+
+falling_PAD_GPIO135                          41.90                             [ns]
+
+rising_PAD_GPIO136                           25.30                             [ns]
+
+falling_PAD_GPIO136                          46.40                             [ns]
+
+rising_PAD_GPIO137                           25.20                             [ns]
+
+falling_PAD_GPIO137                          45.20                             [ns]
+
+rising_PAD_TDMIN_BCK                         22.00                             [ns]
+
+falling_PAD_TDMIN_BCK                        42.00                             [ns]
+
+rising_PAD_TDMIN_DI                          24.30                             [ns]
+
+falling_PAD_TDMIN_DI                         45.90                             [ns]
+
+rising_PAD_TDMIN_LRCK                        25.40                             [ns]
+
+falling_PAD_TDMIN_LRCK                       45.40                             [ns]
+
+rising_PAD_TDMIN_MCLK                        21.30                             [ns]
+
+falling_PAD_TDMIN_MCLK                       44.40                             [ns]
+
+
+SPECSET 10 "ATPG_Phase_A_100ns_HV"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       100.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  21.30      0.00       42.50       [ns]
+
+drive_SI_infra_top_test_ck_1                 18.40      0.00       36.80       [ns]
+
+strobe_SO_chip_top_test_ck_0                 22.00      0.00       44.10       [ns]
+
+strobe_SO_infra_top_test_ck_1                18.60      0.00       37.20       [ns]
+
+rising_PAD_GPIO133                           32.10                             [ns]
+
+falling_PAD_GPIO133                          85.40                             [ns]
+
+rising_PAD_GPIO134                           51.80                             [ns]
+
+falling_PAD_GPIO134                          91.80                             [ns]
+
+rising_PAD_GPIO135                           45.40                             [ns]
+
+falling_PAD_GPIO135                          85.40                             [ns]
+
+rising_PAD_GPIO136                           52.40                             [ns]
+
+falling_PAD_GPIO136                          93.70                             [ns]
+
+rising_PAD_GPIO137                           46.10                             [ns]
+
+falling_PAD_GPIO137                          78.30                             [ns]
+
+rising_PAD_TDMIN_BCK                         52.10                             [ns]
+
+falling_PAD_TDMIN_BCK                        84.80                             [ns]
+
+rising_PAD_TDMIN_DI                          52.10                             [ns]
+
+falling_PAD_TDMIN_DI                         91.80                             [ns]
+
+rising_PAD_TDMIN_LRCK                        51.30                             [ns]
+
+falling_PAD_TDMIN_LRCK                       91.30                             [ns]
+
+rising_PAD_TDMIN_MCLK                        38.10                             [ns]
+
+falling_PAD_TDMIN_MCLK                       88.80                             [ns]
+
+
+SPECSET 120 "ATPG_Phase_A_8.33ns_MH"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       8.33                              [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  0.0                               [ns]
+
+drive_SI_infra_top_test_ck_1                 0.0                               [ns]
+
+strobe_SO_chip_top_test_ck_0                 0.0                               [ns]
+
+strobe_SO_infra_top_test_ck_1                0.0                               [ns]
+
+rising_PAD_GPIO133                           0.0                               [ns]
+
+falling_PAD_GPIO133                          0.0                               [ns]
+
+rising_PAD_GPIO134                           0.0                               [ns]
+
+falling_PAD_GPIO134                          0.0                               [ns]
+
+rising_PAD_GPIO135                           0.0                               [ns]
+
+falling_PAD_GPIO135                          0.0                               [ns]
+
+rising_PAD_GPIO136                           0.0                               [ns]
+
+falling_PAD_GPIO136                          0.0                               [ns]
+
+rising_PAD_GPIO137                           0.0                               [ns]
+
+falling_PAD_GPIO137                          0.0                               [ns]
+
+rising_PAD_TDMIN_BCK                         0.0                               [ns]
+
+falling_PAD_TDMIN_BCK                        0.0                               [ns]
+
+rising_PAD_TDMIN_DI                          0.0                               [ns]
+
+falling_PAD_TDMIN_DI                         0.0                               [ns]
+
+rising_PAD_TDMIN_LRCK                        0.0                               [ns]
+
+falling_PAD_TDMIN_LRCK                       0.0                               [ns]
+
+rising_PAD_TDMIN_MCLK                        0.0                               [ns]
+
+falling_PAD_TDMIN_MCLK                       0.0                               [ns]
+
+
+SPECSET 100 "ATPG_Phase_A_10ns_MH"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       10.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  2.14       0.00       4.28        [ns]
+
+drive_SI_infra_top_test_ck_1                 2.59       0.00       5.17        [ns]
+
+strobe_SO_chip_top_test_ck_0                 2.91       0.00       5.83        [ns]
+
+strobe_SO_infra_top_test_ck_1                2.78       0.00       5.57        [ns]
+
+rising_PAD_GPIO133                           4.25                              [ns]
+
+falling_PAD_GPIO133                          8.87                              [ns]
+
+rising_PAD_GPIO134                           4.44                              [ns]
+
+falling_PAD_GPIO134                          8.44                              [ns]
+
+rising_PAD_GPIO135                           4.42                              [ns]
+
+falling_PAD_GPIO135                          8.42                              [ns]
+
+rising_PAD_GPIO136                           4.14                              [ns]
+
+falling_PAD_GPIO136                          8.82                              [ns]
+
+rising_PAD_GPIO137                           4.91                              [ns]
+
+falling_PAD_GPIO137                          8.91                              [ns]
+
+rising_PAD_TDMIN_BCK                         3.66                              [ns]
+
+falling_PAD_TDMIN_BCK                        7.66                              [ns]
+
+rising_PAD_TDMIN_DI                          4.65                              [ns]
+
+falling_PAD_TDMIN_DI                         9.07                              [ns]
+
+rising_PAD_TDMIN_LRCK                        4.14                              [ns]
+
+falling_PAD_TDMIN_LRCK                       8.14                              [ns]
+
+rising_PAD_TDMIN_MCLK                        4.25                              [ns]
+
+falling_PAD_TDMIN_MCLK                       8.87                              [ns]
+
+
+SPECSET 80 "ATPG_Phase_A_12.50ns_MH"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       12.50                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  2.67       0.00       5.34        [ns]
+
+drive_SI_infra_top_test_ck_1                 3.00       0.00       6.00        [ns]
+
+strobe_SO_chip_top_test_ck_0                 3.44       0.00       6.89        [ns]
+
+strobe_SO_infra_top_test_ck_1                3.22       0.00       6.43        [ns]
+
+rising_PAD_GPIO133                           5.11                              [ns]
+
+falling_PAD_GPIO133                          11.00                             [ns]
+
+rising_PAD_GPIO134                           5.42                              [ns]
+
+falling_PAD_GPIO134                          10.40                             [ns]
+
+rising_PAD_GPIO135                           5.76                              [ns]
+
+falling_PAD_GPIO135                          10.80                             [ns]
+
+rising_PAD_GPIO136                           5.38                              [ns]
+
+falling_PAD_GPIO136                          11.10                             [ns]
+
+rising_PAD_GPIO137                           6.00                              [ns]
+
+falling_PAD_GPIO137                          11.00                             [ns]
+
+rising_PAD_TDMIN_BCK                         4.88                              [ns]
+
+falling_PAD_TDMIN_BCK                        9.88                              [ns]
+
+rising_PAD_TDMIN_DI                          6.00                              [ns]
+
+falling_PAD_TDMIN_DI                         11.50                             [ns]
+
+rising_PAD_TDMIN_LRCK                        5.70                              [ns]
+
+falling_PAD_TDMIN_LRCK                       10.70                             [ns]
+
+rising_PAD_TDMIN_MCLK                        5.31                              [ns]
+
+falling_PAD_TDMIN_MCLK                       11.10                             [ns]
+
+
+SPECSET 60 "ATPG_Phase_A_16.70ns_MH"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       16.70                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  3.55       0.00       7.10        [ns]
+
+drive_SI_infra_top_test_ck_1                 4.10       0.00       8.19        [ns]
+
+strobe_SO_chip_top_test_ck_0                 4.33       0.00       8.65        [ns]
+
+strobe_SO_infra_top_test_ck_1                4.30       0.00       8.59        [ns]
+
+rising_PAD_GPIO133                           7.27                              [ns]
+
+falling_PAD_GPIO133                          14.90                             [ns]
+
+rising_PAD_GPIO134                           7.62                              [ns]
+
+falling_PAD_GPIO134                          14.30                             [ns]
+
+rising_PAD_GPIO135                           7.52                              [ns]
+
+falling_PAD_GPIO135                          14.20                             [ns]
+
+rising_PAD_GPIO136                           7.64                              [ns]
+
+falling_PAD_GPIO136                          15.10                             [ns]
+
+rising_PAD_GPIO137                           8.25                              [ns]
+
+falling_PAD_GPIO137                          15.90                             [ns]
+
+rising_PAD_TDMIN_BCK                         6.78                              [ns]
+
+falling_PAD_TDMIN_BCK                        13.50                             [ns]
+
+rising_PAD_TDMIN_DI                          8.07                              [ns]
+
+falling_PAD_TDMIN_DI                         15.30                             [ns]
+
+rising_PAD_TDMIN_LRCK                        7.66                              [ns]
+
+falling_PAD_TDMIN_LRCK                       14.30                             [ns]
+
+rising_PAD_TDMIN_MCLK                        7.08                              [ns]
+
+falling_PAD_TDMIN_MCLK                       14.80                             [ns]
+
+
+SPECSET 40 "ATPG_Phase_A_25ns_MH"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       25.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  5.33       0.00       10.70       [ns]
+
+drive_SI_infra_top_test_ck_1                 6.26       0.00       12.50       [ns]
+
+strobe_SO_chip_top_test_ck_0                 6.10       0.00       12.20       [ns]
+
+strobe_SO_infra_top_test_ck_1                6.45       0.00       12.90       [ns]
+
+rising_PAD_GPIO133                           11.60                             [ns]
+
+falling_PAD_GPIO133                          22.70                             [ns]
+
+rising_PAD_GPIO134                           12.00                             [ns]
+
+falling_PAD_GPIO134                          22.00                             [ns]
+
+rising_PAD_GPIO135                           12.40                             [ns]
+
+falling_PAD_GPIO135                          22.40                             [ns]
+
+rising_PAD_GPIO136                           12.20                             [ns]
+
+falling_PAD_GPIO136                          23.00                             [ns]
+
+rising_PAD_GPIO137                           12.70                             [ns]
+
+falling_PAD_GPIO137                          22.70                             [ns]
+
+rising_PAD_TDMIN_BCK                         10.60                             [ns]
+
+falling_PAD_TDMIN_BCK                        20.60                             [ns]
+
+rising_PAD_TDMIN_DI                          12.10                             [ns]
+
+falling_PAD_TDMIN_DI                         22.90                             [ns]
+
+rising_PAD_TDMIN_LRCK                        10.80                             [ns]
+
+falling_PAD_TDMIN_LRCK                       20.80                             [ns]
+
+rising_PAD_TDMIN_MCLK                        10.60                             [ns]
+
+falling_PAD_TDMIN_MCLK                       22.20                             [ns]
+
+
+SPECSET 20 "ATPG_Phase_A_50ns_MH"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       50.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  10.60      0.00       21.30       [ns]
+
+drive_SI_infra_top_test_ck_1                 9.32       0.00       18.60       [ns]
+
+strobe_SO_chip_top_test_ck_0                 11.40      0.00       22.80       [ns]
+
+strobe_SO_infra_top_test_ck_1                9.52       0.00       19.00       [ns]
+
+rising_PAD_GPIO133                           17.70                             [ns]
+
+falling_PAD_GPIO133                          42.60                             [ns]
+
+rising_PAD_GPIO134                           18.50                             [ns]
+
+falling_PAD_GPIO134                          38.50                             [ns]
+
+rising_PAD_GPIO135                           21.90                             [ns]
+
+falling_PAD_GPIO135                          41.90                             [ns]
+
+rising_PAD_GPIO136                           25.30                             [ns]
+
+falling_PAD_GPIO136                          46.40                             [ns]
+
+rising_PAD_GPIO137                           25.20                             [ns]
+
+falling_PAD_GPIO137                          45.20                             [ns]
+
+rising_PAD_TDMIN_BCK                         22.00                             [ns]
+
+falling_PAD_TDMIN_BCK                        42.00                             [ns]
+
+rising_PAD_TDMIN_DI                          24.30                             [ns]
+
+falling_PAD_TDMIN_DI                         45.90                             [ns]
+
+rising_PAD_TDMIN_LRCK                        25.40                             [ns]
+
+falling_PAD_TDMIN_LRCK                       45.40                             [ns]
+
+rising_PAD_TDMIN_MCLK                        21.30                             [ns]
+
+falling_PAD_TDMIN_MCLK                       44.40                             [ns]
+
+
+SPECSET 10 "ATPG_Phase_A_100ns_MH"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       100.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  21.30      0.00       42.50       [ns]
+
+drive_SI_infra_top_test_ck_1                 18.40      0.00       36.80       [ns]
+
+strobe_SO_chip_top_test_ck_0                 22.00      0.00       44.10       [ns]
+
+strobe_SO_infra_top_test_ck_1                18.60      0.00       37.20       [ns]
+
+rising_PAD_GPIO133                           35.90                             [ns]
+
+falling_PAD_GPIO133                          85.40                             [ns]
+
+rising_PAD_GPIO134                           51.80                             [ns]
+
+falling_PAD_GPIO134                          91.80                             [ns]
+
+rising_PAD_GPIO135                           45.40                             [ns]
+
+falling_PAD_GPIO135                          85.40                             [ns]
+
+rising_PAD_GPIO136                           52.40                             [ns]
+
+falling_PAD_GPIO136                          93.70                             [ns]
+
+rising_PAD_GPIO137                           38.30                             [ns]
+
+falling_PAD_GPIO137                          78.30                             [ns]
+
+rising_PAD_TDMIN_BCK                         44.80                             [ns]
+
+falling_PAD_TDMIN_BCK                        84.80                             [ns]
+
+rising_PAD_TDMIN_DI                          48.70                             [ns]
+
+falling_PAD_TDMIN_DI                         91.80                             [ns]
+
+rising_PAD_TDMIN_LRCK                        51.30                             [ns]
+
+falling_PAD_TDMIN_LRCK                       91.30                             [ns]
+
+rising_PAD_TDMIN_MCLK                        42.50                             [ns]
+
+falling_PAD_TDMIN_MCLK                       88.80                             [ns]
+
+
+SPECSET 120 "ATPG_Phase_A_8.33ns_ML"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       8.33                              [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  0.0                               [ns]
+
+drive_SI_infra_top_test_ck_1                 0.0                               [ns]
+
+strobe_SO_chip_top_test_ck_0                 0.0                               [ns]
+
+strobe_SO_infra_top_test_ck_1                0.0                               [ns]
+
+rising_PAD_GPIO133                           0.0                               [ns]
+
+falling_PAD_GPIO133                          0.0                               [ns]
+
+rising_PAD_GPIO134                           0.0                               [ns]
+
+falling_PAD_GPIO134                          0.0                               [ns]
+
+rising_PAD_GPIO135                           0.0                               [ns]
+
+falling_PAD_GPIO135                          0.0                               [ns]
+
+rising_PAD_GPIO136                           0.0                               [ns]
+
+falling_PAD_GPIO136                          0.0                               [ns]
+
+rising_PAD_GPIO137                           0.0                               [ns]
+
+falling_PAD_GPIO137                          0.0                               [ns]
+
+rising_PAD_TDMIN_BCK                         0.0                               [ns]
+
+falling_PAD_TDMIN_BCK                        0.0                               [ns]
+
+rising_PAD_TDMIN_DI                          0.0                               [ns]
+
+falling_PAD_TDMIN_DI                         0.0                               [ns]
+
+rising_PAD_TDMIN_LRCK                        0.0                               [ns]
+
+falling_PAD_TDMIN_LRCK                       0.0                               [ns]
+
+rising_PAD_TDMIN_MCLK                        0.0                               [ns]
+
+falling_PAD_TDMIN_MCLK                       0.0                               [ns]
+
+
+SPECSET 100 "ATPG_Phase_A_10ns_ML"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       10.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  2.14       0.00       4.28        [ns]
+
+drive_SI_infra_top_test_ck_1                 2.59       0.00       5.17        [ns]
+
+strobe_SO_chip_top_test_ck_0                 2.91       0.00       5.83        [ns]
+
+strobe_SO_infra_top_test_ck_1                2.78       0.00       5.57        [ns]
+
+rising_PAD_GPIO133                           4.25                              [ns]
+
+falling_PAD_GPIO133                          8.87                              [ns]
+
+rising_PAD_GPIO134                           4.44                              [ns]
+
+falling_PAD_GPIO134                          8.44                              [ns]
+
+rising_PAD_GPIO135                           4.42                              [ns]
+
+falling_PAD_GPIO135                          8.42                              [ns]
+
+rising_PAD_GPIO136                           4.14                              [ns]
+
+falling_PAD_GPIO136                          8.82                              [ns]
+
+rising_PAD_GPIO137                           4.91                              [ns]
+
+falling_PAD_GPIO137                          8.91                              [ns]
+
+rising_PAD_TDMIN_BCK                         3.66                              [ns]
+
+falling_PAD_TDMIN_BCK                        7.66                              [ns]
+
+rising_PAD_TDMIN_DI                          4.65                              [ns]
+
+falling_PAD_TDMIN_DI                         9.07                              [ns]
+
+rising_PAD_TDMIN_LRCK                        4.11                              [ns]
+
+falling_PAD_TDMIN_LRCK                       8.11                              [ns]
+
+rising_PAD_TDMIN_MCLK                        4.25                              [ns]
+
+falling_PAD_TDMIN_MCLK                       8.87                              [ns]
+
+
+SPECSET 80 "ATPG_Phase_A_12.50ns_ML"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       12.50                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  2.67       0.00       5.34        [ns]
+
+drive_SI_infra_top_test_ck_1                 3.00       0.00       6.00        [ns]
+
+strobe_SO_chip_top_test_ck_0                 3.44       0.00       6.89        [ns]
+
+strobe_SO_infra_top_test_ck_1                3.22       0.00       6.43        [ns]
+
+rising_PAD_GPIO133                           5.11                              [ns]
+
+falling_PAD_GPIO133                          11.00                             [ns]
+
+rising_PAD_GPIO134                           5.42                              [ns]
+
+falling_PAD_GPIO134                          10.40                             [ns]
+
+rising_PAD_GPIO135                           5.76                              [ns]
+
+falling_PAD_GPIO135                          10.80                             [ns]
+
+rising_PAD_GPIO136                           5.38                              [ns]
+
+falling_PAD_GPIO136                          11.10                             [ns]
+
+rising_PAD_GPIO137                           6.00                              [ns]
+
+falling_PAD_GPIO137                          11.00                             [ns]
+
+rising_PAD_TDMIN_BCK                         4.88                              [ns]
+
+falling_PAD_TDMIN_BCK                        9.88                              [ns]
+
+rising_PAD_TDMIN_DI                          6.00                              [ns]
+
+falling_PAD_TDMIN_DI                         11.50                             [ns]
+
+rising_PAD_TDMIN_LRCK                        5.67                              [ns]
+
+falling_PAD_TDMIN_LRCK                       10.70                             [ns]
+
+rising_PAD_TDMIN_MCLK                        5.31                              [ns]
+
+falling_PAD_TDMIN_MCLK                       11.10                             [ns]
+
+
+SPECSET 60 "ATPG_Phase_A_16.70ns_ML"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       16.70                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  3.55       0.00       7.10        [ns]
+
+drive_SI_infra_top_test_ck_1                 4.10       0.00       8.19        [ns]
+
+strobe_SO_chip_top_test_ck_0                 4.33       0.00       8.65        [ns]
+
+strobe_SO_infra_top_test_ck_1                4.30       0.00       8.59        [ns]
+
+rising_PAD_GPIO133                           7.27                              [ns]
+
+falling_PAD_GPIO133                          14.90                             [ns]
+
+rising_PAD_GPIO134                           7.62                              [ns]
+
+falling_PAD_GPIO134                          14.30                             [ns]
+
+rising_PAD_GPIO135                           7.52                              [ns]
+
+falling_PAD_GPIO135                          14.20                             [ns]
+
+rising_PAD_GPIO136                           7.64                              [ns]
+
+falling_PAD_GPIO136                          15.10                             [ns]
+
+rising_PAD_GPIO137                           8.25                              [ns]
+
+falling_PAD_GPIO137                          14.90                             [ns]
+
+rising_PAD_TDMIN_BCK                         6.78                              [ns]
+
+falling_PAD_TDMIN_BCK                        13.50                             [ns]
+
+rising_PAD_TDMIN_DI                          8.07                              [ns]
+
+falling_PAD_TDMIN_DI                         15.30                             [ns]
+
+rising_PAD_TDMIN_LRCK                        7.64                              [ns]
+
+falling_PAD_TDMIN_LRCK                       14.30                             [ns]
+
+rising_PAD_TDMIN_MCLK                        7.08                              [ns]
+
+falling_PAD_TDMIN_MCLK                       14.80                             [ns]
+
+
+SPECSET 40 "ATPG_Phase_A_25ns_ML"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       25.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  5.33       0.00       10.70       [ns]
+
+drive_SI_infra_top_test_ck_1                 6.26       0.00       12.50       [ns]
+
+strobe_SO_chip_top_test_ck_0                 6.10       0.00       12.20       [ns]
+
+strobe_SO_infra_top_test_ck_1                6.45       0.00       12.90       [ns]
+
+rising_PAD_GPIO133                           11.60                             [ns]
+
+falling_PAD_GPIO133                          22.70                             [ns]
+
+rising_PAD_GPIO134                           12.00                             [ns]
+
+falling_PAD_GPIO134                          22.00                             [ns]
+
+rising_PAD_GPIO135                           12.40                             [ns]
+
+falling_PAD_GPIO135                          22.40                             [ns]
+
+rising_PAD_GPIO136                           12.20                             [ns]
+
+falling_PAD_GPIO136                          23.00                             [ns]
+
+rising_PAD_GPIO137                           12.70                             [ns]
+
+falling_PAD_GPIO137                          22.70                             [ns]
+
+rising_PAD_TDMIN_BCK                         10.60                             [ns]
+
+falling_PAD_TDMIN_BCK                        20.60                             [ns]
+
+rising_PAD_TDMIN_DI                          12.10                             [ns]
+
+falling_PAD_TDMIN_DI                         22.90                             [ns]
+
+rising_PAD_TDMIN_LRCK                        10.80                             [ns]
+
+falling_PAD_TDMIN_LRCK                       20.80                             [ns]
+
+rising_PAD_TDMIN_MCLK                        10.60                             [ns]
+
+falling_PAD_TDMIN_MCLK                       22.20                             [ns]
+
+
+SPECSET 20 "ATPG_Phase_A_50ns_ML"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       50.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  10.60      0.00       21.30       [ns]
+
+drive_SI_infra_top_test_ck_1                 9.32       0.00       18.60       [ns]
+
+strobe_SO_chip_top_test_ck_0                 11.40      0.00       22.80       [ns]
+
+strobe_SO_infra_top_test_ck_1                9.52       0.00       19.00       [ns]
+
+rising_PAD_GPIO133                           17.70                             [ns]
+
+falling_PAD_GPIO133                          42.60                             [ns]
+
+rising_PAD_GPIO134                           18.50                             [ns]
+
+falling_PAD_GPIO134                          38.50                             [ns]
+
+rising_PAD_GPIO135                           21.90                             [ns]
+
+falling_PAD_GPIO135                          41.90                             [ns]
+
+rising_PAD_GPIO136                           25.30                             [ns]
+
+falling_PAD_GPIO136                          46.40                             [ns]
+
+rising_PAD_GPIO137                           25.20                             [ns]
+
+falling_PAD_GPIO137                          45.20                             [ns]
+
+rising_PAD_TDMIN_BCK                         22.00                             [ns]
+
+falling_PAD_TDMIN_BCK                        42.00                             [ns]
+
+rising_PAD_TDMIN_DI                          24.30                             [ns]
+
+falling_PAD_TDMIN_DI                         45.90                             [ns]
+
+rising_PAD_TDMIN_LRCK                        25.30                             [ns]
+
+falling_PAD_TDMIN_LRCK                       45.30                             [ns]
+
+rising_PAD_TDMIN_MCLK                        21.30                             [ns]
+
+falling_PAD_TDMIN_MCLK                       44.40                             [ns]
+
+
+SPECSET 10 "ATPG_Phase_A_100ns_ML"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       100.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  21.30      0.00       42.50       [ns]
+
+drive_SI_infra_top_test_ck_1                 18.40      0.00       36.80       [ns]
+
+strobe_SO_chip_top_test_ck_0                 22.00      0.00       44.10       [ns]
+
+strobe_SO_infra_top_test_ck_1                18.60      0.00       37.20       [ns]
+
+rising_PAD_GPIO133                           35.90                             [ns]
+
+falling_PAD_GPIO133                          85.40                             [ns]
+
+rising_PAD_GPIO134                           51.80                             [ns]
+
+falling_PAD_GPIO134                          91.80                             [ns]
+
+rising_PAD_GPIO135                           45.40                             [ns]
+
+falling_PAD_GPIO135                          85.40                             [ns]
+
+rising_PAD_GPIO136                           52.40                             [ns]
+
+falling_PAD_GPIO136                          93.70                             [ns]
+
+rising_PAD_GPIO137                           38.30                             [ns]
+
+falling_PAD_GPIO137                          78.30                             [ns]
+
+rising_PAD_TDMIN_BCK                         44.80                             [ns]
+
+falling_PAD_TDMIN_BCK                        84.80                             [ns]
+
+rising_PAD_TDMIN_DI                          48.70                             [ns]
+
+falling_PAD_TDMIN_DI                         91.80                             [ns]
+
+rising_PAD_TDMIN_LRCK                        51.30                             [ns]
+
+falling_PAD_TDMIN_LRCK                       91.30                             [ns]
+
+rising_PAD_TDMIN_MCLK                        42.50                             [ns]
+
+falling_PAD_TDMIN_MCLK                       88.80                             [ns]
+
+
+SPECSET 120 "ATPG_Phase_A_8.33ns_LV"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       8.33                              [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  0.0                               [ns]
+
+drive_SI_infra_top_test_ck_1                 0.0                               [ns]
+
+strobe_SO_chip_top_test_ck_0                 0.0                               [ns]
+
+strobe_SO_infra_top_test_ck_1                0.0                               [ns]
+
+rising_PAD_GPIO133                           0.0                               [ns]
+
+falling_PAD_GPIO133                          0.0                               [ns]
+
+rising_PAD_GPIO134                           0.0                               [ns]
+
+falling_PAD_GPIO134                          0.0                               [ns]
+
+rising_PAD_GPIO135                           0.0                               [ns]
+
+falling_PAD_GPIO135                          0.0                               [ns]
+
+rising_PAD_GPIO136                           0.0                               [ns]
+
+falling_PAD_GPIO136                          0.0                               [ns]
+
+rising_PAD_GPIO137                           0.0                               [ns]
+
+falling_PAD_GPIO137                          0.0                               [ns]
+
+rising_PAD_TDMIN_BCK                         0.0                               [ns]
+
+falling_PAD_TDMIN_BCK                        0.0                               [ns]
+
+rising_PAD_TDMIN_DI                          0.0                               [ns]
+
+falling_PAD_TDMIN_DI                         0.0                               [ns]
+
+rising_PAD_TDMIN_LRCK                        0.0                               [ns]
+
+falling_PAD_TDMIN_LRCK                       0.0                               [ns]
+
+rising_PAD_TDMIN_MCLK                        0.0                               [ns]
+
+falling_PAD_TDMIN_MCLK                       0.0                               [ns]
+
+
+SPECSET 100 "ATPG_Phase_A_10ns_LV"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       10.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  2.14       0.00       4.28        [ns]
+
+drive_SI_infra_top_test_ck_1                 2.59       0.00       5.17        [ns]
+
+strobe_SO_chip_top_test_ck_0                 2.91       0.00       5.83        [ns]
+
+strobe_SO_infra_top_test_ck_1                2.78       0.00       5.57        [ns]
+
+rising_PAD_GPIO133                           4.25                              [ns]
+
+falling_PAD_GPIO133                          8.87                              [ns]
+
+rising_PAD_GPIO134                           4.44                              [ns]
+
+falling_PAD_GPIO134                          8.44                              [ns]
+
+rising_PAD_GPIO135                           4.42                              [ns]
+
+falling_PAD_GPIO135                          8.42                              [ns]
+
+rising_PAD_GPIO136                           4.14                              [ns]
+
+falling_PAD_GPIO136                          8.82                              [ns]
+
+rising_PAD_GPIO137                           4.91                              [ns]
+
+falling_PAD_GPIO137                          8.91                              [ns]
+
+rising_PAD_TDMIN_BCK                         3.66                              [ns]
+
+falling_PAD_TDMIN_BCK                        7.66                              [ns]
+
+rising_PAD_TDMIN_DI                          4.65                              [ns]
+
+falling_PAD_TDMIN_DI                         9.07                              [ns]
+
+rising_PAD_TDMIN_LRCK                        4.00                              [ns]
+
+falling_PAD_TDMIN_LRCK                       8.00                              [ns]
+
+rising_PAD_TDMIN_MCLK                        4.25                              [ns]
+
+falling_PAD_TDMIN_MCLK                       8.87                              [ns]
+
+
+SPECSET 80 "ATPG_Phase_A_12.50ns_LV"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       12.50                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  2.67       0.00       5.34        [ns]
+
+drive_SI_infra_top_test_ck_1                 3.00       0.00       6.00        [ns]
+
+strobe_SO_chip_top_test_ck_0                 3.44       0.00       6.89        [ns]
+
+strobe_SO_infra_top_test_ck_1                3.22       0.00       6.43        [ns]
+
+rising_PAD_GPIO133                           5.11                              [ns]
+
+falling_PAD_GPIO133                          11.00                             [ns]
+
+rising_PAD_GPIO134                           5.42                              [ns]
+
+falling_PAD_GPIO134                          10.40                             [ns]
+
+rising_PAD_GPIO135                           5.76                              [ns]
+
+falling_PAD_GPIO135                          10.80                             [ns]
+
+rising_PAD_GPIO136                           5.38                              [ns]
+
+falling_PAD_GPIO136                          11.10                             [ns]
+
+rising_PAD_GPIO137                           6.00                              [ns]
+
+falling_PAD_GPIO137                          11.00                             [ns]
+
+rising_PAD_TDMIN_BCK                         4.88                              [ns]
+
+falling_PAD_TDMIN_BCK                        9.88                              [ns]
+
+rising_PAD_TDMIN_DI                          6.00                              [ns]
+
+falling_PAD_TDMIN_DI                         11.50                             [ns]
+
+rising_PAD_TDMIN_LRCK                        5.60                              [ns]
+
+falling_PAD_TDMIN_LRCK                       10.60                             [ns]
+
+rising_PAD_TDMIN_MCLK                        5.31                              [ns]
+
+falling_PAD_TDMIN_MCLK                       11.10                             [ns]
+
+
+SPECSET 60 "ATPG_Phase_A_16.70ns_LV"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       16.70                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  3.55       0.00       7.10        [ns]
+
+drive_SI_infra_top_test_ck_1                 4.10       0.00       8.19        [ns]
+
+strobe_SO_chip_top_test_ck_0                 4.33       0.00       8.65        [ns]
+
+strobe_SO_infra_top_test_ck_1                4.30       0.00       8.59        [ns]
+
+rising_PAD_GPIO133                           7.27                              [ns]
+
+falling_PAD_GPIO133                          14.90                             [ns]
+
+rising_PAD_GPIO134                           7.62                              [ns]
+
+falling_PAD_GPIO134                          14.30                             [ns]
+
+rising_PAD_GPIO135                           7.52                              [ns]
+
+falling_PAD_GPIO135                          14.20                             [ns]
+
+rising_PAD_GPIO136                           7.64                              [ns]
+
+falling_PAD_GPIO136                          15.10                             [ns]
+
+rising_PAD_GPIO137                           8.25                              [ns]
+
+falling_PAD_GPIO137                          14.90                             [ns]
+
+rising_PAD_TDMIN_BCK                         6.78                              [ns]
+
+falling_PAD_TDMIN_BCK                        13.50                             [ns]
+
+rising_PAD_TDMIN_DI                          8.07                              [ns]
+
+falling_PAD_TDMIN_DI                         15.30                             [ns]
+
+rising_PAD_TDMIN_LRCK                        7.56                              [ns]
+
+falling_PAD_TDMIN_LRCK                       14.20                             [ns]
+
+rising_PAD_TDMIN_MCLK                        7.08                              [ns]
+
+falling_PAD_TDMIN_MCLK                       14.80                             [ns]
+
+
+SPECSET 40 "ATPG_Phase_A_25ns_LV"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       25.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  5.33       0.00       10.70       [ns]
+
+drive_SI_infra_top_test_ck_1                 6.37       0.00       12.70       [ns]
+
+strobe_SO_chip_top_test_ck_0                 6.10       0.00       12.20       [ns]
+
+strobe_SO_infra_top_test_ck_1                6.56       0.00       13.10       [ns]
+
+rising_PAD_GPIO133                           11.80                             [ns]
+
+falling_PAD_GPIO133                          22.80                             [ns]
+
+rising_PAD_GPIO134                           12.20                             [ns]
+
+falling_PAD_GPIO134                          22.20                             [ns]
+
+rising_PAD_GPIO135                           12.10                             [ns]
+
+falling_PAD_GPIO135                          22.10                             [ns]
+
+rising_PAD_GPIO136                           12.20                             [ns]
+
+falling_PAD_GPIO136                          23.00                             [ns]
+
+rising_PAD_GPIO137                           12.80                             [ns]
+
+falling_PAD_GPIO137                          22.80                             [ns]
+
+rising_PAD_TDMIN_BCK                         10.60                             [ns]
+
+falling_PAD_TDMIN_BCK                        20.60                             [ns]
+
+rising_PAD_TDMIN_DI                          12.10                             [ns]
+
+falling_PAD_TDMIN_DI                         22.90                             [ns]
+
+rising_PAD_TDMIN_LRCK                        12.30                             [ns]
+
+falling_PAD_TDMIN_LRCK                       22.30                             [ns]
+
+rising_PAD_TDMIN_MCLK                        10.60                             [ns]
+
+falling_PAD_TDMIN_MCLK                       22.20                             [ns]
+
+
+SPECSET 20 "ATPG_Phase_A_50ns_LV"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       50.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  10.60      0.00       21.30       [ns]
+
+drive_SI_infra_top_test_ck_1                 9.32       0.00       18.60       [ns]
+
+strobe_SO_chip_top_test_ck_0                 11.40      0.00       22.80       [ns]
+
+strobe_SO_infra_top_test_ck_1                9.52       0.00       19.00       [ns]
+
+rising_PAD_GPIO133                           17.70                             [ns]
+
+falling_PAD_GPIO133                          42.60                             [ns]
+
+rising_PAD_GPIO134                           18.50                             [ns]
+
+falling_PAD_GPIO134                          38.50                             [ns]
+
+rising_PAD_GPIO135                           21.90                             [ns]
+
+falling_PAD_GPIO135                          41.90                             [ns]
+
+rising_PAD_GPIO136                           25.30                             [ns]
+
+falling_PAD_GPIO136                          46.40                             [ns]
+
+rising_PAD_GPIO137                           25.20                             [ns]
+
+falling_PAD_GPIO137                          45.20                             [ns]
+
+rising_PAD_TDMIN_BCK                         22.00                             [ns]
+
+falling_PAD_TDMIN_BCK                        42.00                             [ns]
+
+rising_PAD_TDMIN_DI                          24.30                             [ns]
+
+falling_PAD_TDMIN_DI                         45.90                             [ns]
+
+rising_PAD_TDMIN_LRCK                        25.30                             [ns]
+
+falling_PAD_TDMIN_LRCK                       45.30                             [ns]
+
+rising_PAD_TDMIN_MCLK                        21.30                             [ns]
+
+falling_PAD_TDMIN_MCLK                       44.40                             [ns]
+
+
+SPECSET 10 "ATPG_Phase_A_100ns_LV"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       100.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  21.30      0.00       42.50       [ns]
+
+drive_SI_infra_top_test_ck_1                 18.40      0.00       36.80       [ns]
+
+strobe_SO_chip_top_test_ck_0                 22.00      0.00       44.10       [ns]
+
+strobe_SO_infra_top_test_ck_1                18.60      0.00       37.20       [ns]
+
+rising_PAD_GPIO133                           35.90                             [ns]
+
+falling_PAD_GPIO133                          85.40                             [ns]
+
+rising_PAD_GPIO134                           51.80                             [ns]
+
+falling_PAD_GPIO134                          91.80                             [ns]
+
+rising_PAD_GPIO135                           45.40                             [ns]
+
+falling_PAD_GPIO135                          85.40                             [ns]
+
+rising_PAD_GPIO136                           52.40                             [ns]
+
+falling_PAD_GPIO136                          93.70                             [ns]
+
+rising_PAD_GPIO137                           38.30                             [ns]
+
+falling_PAD_GPIO137                          78.30                             [ns]
+
+rising_PAD_TDMIN_BCK                         44.80                             [ns]
+
+falling_PAD_TDMIN_BCK                        84.80                             [ns]
+
+rising_PAD_TDMIN_DI                          48.70                             [ns]
+
+falling_PAD_TDMIN_DI                         91.80                             [ns]
+
+rising_PAD_TDMIN_LRCK                        51.20                             [ns]
+
+falling_PAD_TDMIN_LRCK                       91.20                             [ns]
+
+rising_PAD_TDMIN_MCLK                        42.50                             [ns]
+
+falling_PAD_TDMIN_MCLK                       88.80                             [ns]
+

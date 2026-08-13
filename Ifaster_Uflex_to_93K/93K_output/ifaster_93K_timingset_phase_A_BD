@@ -1,0 +1,476 @@
+
+EQNSET 301 "ATPG_Phase_A"
+
+SPECS
+
+Period                                             [ns]
+drive_PI                                           [ns]
+strobe_PO                                          [ns]
+
+
+drive_SI_chip_top_test_ck_0                        [ns]
+rising_DCDC_EN                                     [ns]
+falling_DCDC_EN                                    [ns]
+strobe_SO_chip_top_test_ck_0                       [ns]
+
+
+EQUATIONS
+
+TIMINGSET 1 "Phase_A_Set"
+period = Period
+
+PINS ALLPINS
+          d1 = drive_PI
+          r1 = strobe_PO
+
+PINS SI_chip_top_test_ck_0
+         d1 = drive_SI_chip_top_test_ck_0
+         r1 = strobe_PO
+
+PINS SO_chip_top_test_ck_0
+         d1 = drive_PI
+         r1 = strobe_SO_chip_top_test_ck_0
+
+PINS PAD_DCDC_EN
+         d1 = rising_DCDC_EN
+         d2 = falling_DCDC_EN
+
+
+
+EQNSET 301 "ATPG_Phase_A"
+
+WAVETBL "ATPG_Phase_A_type"
+
+CHECK all
+
+SPECSET 10 "ATPG_Phase_A_100ns_AA"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       100.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  0.0                               [ns]
+
+strobe_SO_chip_top_test_ck_0                 0.0                               [ns]
+
+rising_DCDC_EN                               0.0                               [ns]
+
+falling_DCDC_EN                              0.0                               [ns]
+
+
+SPECSET 20 "ATPG_Phase_A_50ns_AA"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       50.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  0.0                               [ns]
+
+strobe_SO_chip_top_test_ck_0                 0.0                               [ns]
+
+rising_DCDC_EN                               0.0                               [ns]
+
+falling_DCDC_EN                              0.0                               [ns]
+
+
+SPECSET 25 "ATPG_Phase_A_40ns_AA"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       40.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  0.0                               [ns]
+
+strobe_SO_chip_top_test_ck_0                 0.0                               [ns]
+
+rising_DCDC_EN                               0.0                               [ns]
+
+falling_DCDC_EN                              0.0                               [ns]
+
+
+SPECSET 33 "ATPG_Phase_A_30ns_AA"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       30.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  0.0                               [ns]
+
+strobe_SO_chip_top_test_ck_0                 0.0                               [ns]
+
+rising_DCDC_EN                               0.0                               [ns]
+
+falling_DCDC_EN                              0.0                               [ns]
+
+
+SPECSET 40 "ATPG_Phase_A_25ns_AA"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       25.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  0.0                               [ns]
+
+strobe_SO_chip_top_test_ck_0                 0.0                               [ns]
+
+rising_DCDC_EN                               0.0                               [ns]
+
+falling_DCDC_EN                              0.0                               [ns]
+
+
+SPECSET 50 "ATPG_Phase_A_20ns_AA"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       20.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  0.0                               [ns]
+
+strobe_SO_chip_top_test_ck_0                 0.0                               [ns]
+
+rising_DCDC_EN                               0.0                               [ns]
+
+falling_DCDC_EN                              0.0                               [ns]
+
+
+SPECSET 67 "ATPG_Phase_A_15ns_AA"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       15.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  0.0                               [ns]
+
+strobe_SO_chip_top_test_ck_0                 0.0                               [ns]
+
+rising_DCDC_EN                               0.0                               [ns]
+
+falling_DCDC_EN                              0.0                               [ns]
+
+
+SPECSET 80 "ATPG_Phase_A_12.50ns_AA"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       12.50                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  0.0                               [ns]
+
+strobe_SO_chip_top_test_ck_0                 0.0                               [ns]
+
+rising_DCDC_EN                               0.0                               [ns]
+
+falling_DCDC_EN                              0.0                               [ns]
+
+
+SPECSET 100 "ATPG_Phase_A_10ns_AA"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       10.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  0.0                               [ns]
+
+strobe_SO_chip_top_test_ck_0                 0.0                               [ns]
+
+rising_DCDC_EN                               0.0                               [ns]
+
+falling_DCDC_EN                              0.0                               [ns]
+
+
+SPECSET 10 "ATPG_Phase_A_100ns_BB"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       100.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  0.0                               [ns]
+
+strobe_SO_chip_top_test_ck_0                 0.0                               [ns]
+
+rising_DCDC_EN                               0.0                               [ns]
+
+falling_DCDC_EN                              0.0                               [ns]
+
+
+SPECSET 20 "ATPG_Phase_A_50ns_BB"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       50.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  0.0                               [ns]
+
+strobe_SO_chip_top_test_ck_0                 0.0                               [ns]
+
+rising_DCDC_EN                               0.0                               [ns]
+
+falling_DCDC_EN                              0.0                               [ns]
+
+
+SPECSET 25 "ATPG_Phase_A_40ns_BB"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       40.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  0.0                               [ns]
+
+strobe_SO_chip_top_test_ck_0                 0.0                               [ns]
+
+rising_DCDC_EN                               0.0                               [ns]
+
+falling_DCDC_EN                              0.0                               [ns]
+
+
+SPECSET 33 "ATPG_Phase_A_30ns_BB"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       30.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  0.0                               [ns]
+
+strobe_SO_chip_top_test_ck_0                 0.0                               [ns]
+
+rising_DCDC_EN                               0.0                               [ns]
+
+falling_DCDC_EN                              0.0                               [ns]
+
+
+SPECSET 40 "ATPG_Phase_A_25ns_BB"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       25.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  0.0                               [ns]
+
+strobe_SO_chip_top_test_ck_0                 0.0                               [ns]
+
+rising_DCDC_EN                               0.0                               [ns]
+
+falling_DCDC_EN                              0.0                               [ns]
+
+
+SPECSET 50 "ATPG_Phase_A_20ns_BB"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       20.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  0.0                               [ns]
+
+strobe_SO_chip_top_test_ck_0                 0.0                               [ns]
+
+rising_DCDC_EN                               0.0                               [ns]
+
+falling_DCDC_EN                              0.0                               [ns]
+
+
+SPECSET 67 "ATPG_Phase_A_15ns_BB"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       15.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  0.0                               [ns]
+
+strobe_SO_chip_top_test_ck_0                 0.0                               [ns]
+
+rising_DCDC_EN                               0.0                               [ns]
+
+falling_DCDC_EN                              0.0                               [ns]
+
+
+SPECSET 80 "ATPG_Phase_A_12.50ns_BB"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       12.50                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  0.0                               [ns]
+
+strobe_SO_chip_top_test_ck_0                 0.0                               [ns]
+
+rising_DCDC_EN                               0.0                               [ns]
+
+falling_DCDC_EN                              0.0                               [ns]
+
+
+SPECSET 100 "ATPG_Phase_A_10ns_BB"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       10.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  0.0                               [ns]
+
+strobe_SO_chip_top_test_ck_0                 0.0                               [ns]
+
+rising_DCDC_EN                               0.0                               [ns]
+
+falling_DCDC_EN                              0.0                               [ns]
+
+
+SPECSET 10 "ATPG_Phase_A_100ns_CC"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       100.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  21.50      0.00       43.00       [ns]
+
+strobe_SO_chip_top_test_ck_0                 22.70      0.00       45.30       [ns]
+
+rising_DCDC_EN                               42.50                             [ns]
+
+falling_DCDC_EN                              88.80                             [ns]
+
+
+SPECSET 20 "ATPG_Phase_A_50ns_CC"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       50.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  10.90      0.00       21.80       [ns]
+
+strobe_SO_chip_top_test_ck_0                 12.00      0.00       24.10       [ns]
+
+rising_DCDC_EN                               21.30                             [ns]
+
+falling_DCDC_EN                              44.40                             [ns]
+
+
+SPECSET 25 "ATPG_Phase_A_40ns_CC"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       40.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  8.76       0.00       17.50       [ns]
+
+strobe_SO_chip_top_test_ck_0                 9.92       0.00       19.80       [ns]
+
+rising_DCDC_EN                               17.00                             [ns]
+
+falling_DCDC_EN                              35.50                             [ns]
+
+
+SPECSET 33 "ATPG_Phase_A_30ns_CC"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       30.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  6.63       0.00       13.30       [ns]
+
+strobe_SO_chip_top_test_ck_0                 7.79       0.00       15.60       [ns]
+
+rising_DCDC_EN                               12.80                             [ns]
+
+falling_DCDC_EN                              26.60                             [ns]
+
+
+SPECSET 40 "ATPG_Phase_A_25ns_CC"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       25.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  5.57       0.00       11.10       [ns]
+
+strobe_SO_chip_top_test_ck_0                 6.73       0.00       13.50       [ns]
+
+rising_DCDC_EN                               10.60                             [ns]
+
+falling_DCDC_EN                              22.20                             [ns]
+
+
+SPECSET 50 "ATPG_Phase_A_20ns_CC"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       20.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  4.51       0.00       9.01        [ns]
+
+strobe_SO_chip_top_test_ck_0                 5.67       0.00       11.30       [ns]
+
+rising_DCDC_EN                               8.50                              [ns]
+
+falling_DCDC_EN                              17.80                             [ns]
+
+
+SPECSET 67 "ATPG_Phase_A_15ns_CC"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       15.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  3.43       0.00       6.85        [ns]
+
+strobe_SO_chip_top_test_ck_0                 5.30       1.42       9.17        [ns]
+
+rising_DCDC_EN                               6.34                              [ns]
+
+falling_DCDC_EN                              13.30                             [ns]
+
+
+SPECSET 80 "ATPG_Phase_A_12.50ns_CC"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       12.50                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  2.71       0.00       5.42        [ns]
+
+strobe_SO_chip_top_test_ck_0                 5.12       2.49       7.74        [ns]
+
+rising_DCDC_EN                               4.91                              [ns]
+
+falling_DCDC_EN                              11.00                             [ns]
+
+
+SPECSET 100 "ATPG_Phase_A_10ns_CC"
+
+# SPECNAME                                   *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                                       10.00                             [ns]
+drive_PI                                     0.00                              [ns]
+strobe_PO                                    5.00                              [ns]
+
+drive_SI_chip_top_test_ck_0                  2.19       0.00       4.38        [ns]
+
+strobe_SO_chip_top_test_ck_0                 5.33       3.95       6.70        [ns]
+
+rising_DCDC_EN                               3.87                              [ns]
+
+falling_DCDC_EN                              8.66                              [ns]
+

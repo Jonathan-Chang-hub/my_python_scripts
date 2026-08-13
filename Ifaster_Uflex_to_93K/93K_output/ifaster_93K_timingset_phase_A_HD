@@ -1,0 +1,272 @@
+
+EQNSET 101 "ATPG_Phase_A"
+
+SPECS
+
+Period                                             [ns]
+drive_PI                                           [ns]
+strobe_PO                                          [ns]
+
+
+
+EQUATIONS
+
+TIMINGSET 1 "Phase_A_Set"
+period = Period
+
+PINS ALLPINS
+          d1 = drive_PI
+          r1 = strobe_PO
+
+
+
+
+EQNSET 101 "ATPG_Phase_A"
+
+WAVETBL "ATPG_Phase_A_type"
+
+CHECK all
+
+SPECSET 10 "ATPG_Phase_A_100ns_AA"
+
+# SPECNAME                     *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                         100.00                            [ns]
+drive_PI                       0.00                              [ns]
+strobe_PO                      5.00                              [ns]
+
+
+
+SPECSET 20 "ATPG_Phase_A_50ns_AA"
+
+# SPECNAME                     *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                         50.00                             [ns]
+drive_PI                       0.00                              [ns]
+strobe_PO                      5.00                              [ns]
+
+
+
+SPECSET 25 "ATPG_Phase_A_40ns_AA"
+
+# SPECNAME                     *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                         40.00                             [ns]
+drive_PI                       0.00                              [ns]
+strobe_PO                      5.00                              [ns]
+
+
+
+SPECSET 33 "ATPG_Phase_A_30ns_AA"
+
+# SPECNAME                     *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                         30.00                             [ns]
+drive_PI                       0.00                              [ns]
+strobe_PO                      5.00                              [ns]
+
+
+
+SPECSET 40 "ATPG_Phase_A_25ns_AA"
+
+# SPECNAME                     *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                         25.00                             [ns]
+drive_PI                       0.00                              [ns]
+strobe_PO                      5.00                              [ns]
+
+
+
+SPECSET 50 "ATPG_Phase_A_20ns_AA"
+
+# SPECNAME                     *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                         20.00                             [ns]
+drive_PI                       0.00                              [ns]
+strobe_PO                      5.00                              [ns]
+
+
+
+SPECSET 67 "ATPG_Phase_A_15ns_AA"
+
+# SPECNAME                     *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                         15.00                             [ns]
+drive_PI                       0.00                              [ns]
+strobe_PO                      5.00                              [ns]
+
+
+
+SPECSET 80 "ATPG_Phase_A_12.50ns_AA"
+
+# SPECNAME                     *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                         12.50                             [ns]
+drive_PI                       0.00                              [ns]
+strobe_PO                      5.00                              [ns]
+
+
+
+SPECSET 100 "ATPG_Phase_A_10ns_AA"
+
+# SPECNAME                     *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                         10.00                             [ns]
+drive_PI                       0.00                              [ns]
+strobe_PO                      5.00                              [ns]
+
+
+
+SPECSET 10 "ATPG_Phase_A_100ns_BB"
+
+# SPECNAME                     *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                         100.00                            [ns]
+drive_PI                       0.00                              [ns]
+strobe_PO                      5.00                              [ns]
+
+
+
+SPECSET 20 "ATPG_Phase_A_50ns_BB"
+
+# SPECNAME                     *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                         50.00                             [ns]
+drive_PI                       0.00                              [ns]
+strobe_PO                      5.00                              [ns]
+
+
+
+SPECSET 25 "ATPG_Phase_A_40ns_BB"
+
+# SPECNAME                     *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                         40.00                             [ns]
+drive_PI                       0.00                              [ns]
+strobe_PO                      5.00                              [ns]
+
+
+
+SPECSET 33 "ATPG_Phase_A_30ns_BB"
+
+# SPECNAME                     *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                         30.00                             [ns]
+drive_PI                       0.00                              [ns]
+strobe_PO                      5.00                              [ns]
+
+
+
+SPECSET 40 "ATPG_Phase_A_25ns_BB"
+
+# SPECNAME                     *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                         25.00                             [ns]
+drive_PI                       0.00                              [ns]
+strobe_PO                      5.00                              [ns]
+
+
+
+SPECSET 50 "ATPG_Phase_A_20ns_BB"
+
+# SPECNAME                     *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                         20.00                             [ns]
+drive_PI                       0.00                              [ns]
+strobe_PO                      5.00                              [ns]
+
+
+
+SPECSET 67 "ATPG_Phase_A_15ns_BB"
+
+# SPECNAME                     *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                         15.00                             [ns]
+drive_PI                       0.00                              [ns]
+strobe_PO                      5.00                              [ns]
+
+
+
+SPECSET 80 "ATPG_Phase_A_12.50ns_BB"
+
+# SPECNAME                     *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                         12.50                             [ns]
+drive_PI                       0.00                              [ns]
+strobe_PO                      5.00                              [ns]
+
+
+
+SPECSET 100 "ATPG_Phase_A_10ns_BB"
+
+# SPECNAME                     *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                         10.00                             [ns]
+drive_PI                       0.00                              [ns]
+strobe_PO                      5.00                              [ns]
+
+
+
+SPECSET 10 "ATPG_Phase_A_100ns_CC"
+
+# SPECNAME                     *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                         100.00                            [ns]
+drive_PI                       0.00                              [ns]
+strobe_PO                      5.00                              [ns]
+
+
+
+SPECSET 20 "ATPG_Phase_A_50ns_CC"
+
+# SPECNAME                     *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                         50.00                             [ns]
+drive_PI                       0.00                              [ns]
+strobe_PO                      5.00                              [ns]
+
+
+
+SPECSET 25 "ATPG_Phase_A_40ns_CC"
+
+# SPECNAME                     *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                         40.00                             [ns]
+drive_PI                       0.00                              [ns]
+strobe_PO                      5.00                              [ns]
+
+
+
+SPECSET 33 "ATPG_Phase_A_30ns_CC"
+
+# SPECNAME                     *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                         30.00                             [ns]
+drive_PI                       0.00                              [ns]
+strobe_PO                      5.00                              [ns]
+
+
+
+SPECSET 40 "ATPG_Phase_A_25ns_CC"
+
+# SPECNAME                     *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                         25.00                             [ns]
+drive_PI                       0.00                              [ns]
+strobe_PO                      5.00                              [ns]
+
+
+
+SPECSET 50 "ATPG_Phase_A_20ns_CC"
+
+# SPECNAME                     *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                         20.00                             [ns]
+drive_PI                       0.00                              [ns]
+strobe_PO                      5.00                              [ns]
+
+
+
+SPECSET 67 "ATPG_Phase_A_15ns_CC"
+
+# SPECNAME                     *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                         15.00                             [ns]
+drive_PI                       0.00                              [ns]
+strobe_PO                      5.00                              [ns]
+
+
+
+SPECSET 80 "ATPG_Phase_A_12.50ns_CC"
+
+# SPECNAME                     *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                         12.50                             [ns]
+drive_PI                       0.00                              [ns]
+strobe_PO                      5.00                              [ns]
+
+
+
+SPECSET 100 "ATPG_Phase_A_10ns_CC"
+
+# SPECNAME                     *ACTUAL*   *MINIMUM*  *MAXIMUM*  UNITS COMMENT
+Period                         10.00                             [ns]
+drive_PI                       0.00                              [ns]
+strobe_PO                      5.00                              [ns]
+
+
+

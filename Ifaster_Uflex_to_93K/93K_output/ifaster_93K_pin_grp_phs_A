@@ -1,0 +1,2 @@
+DFGP I,(PAD_EC_INT,PAD_SOC_INT,PAD_SOC_SDA),(SI_chip_top_test_ck_0)
+DFGP O,(PAD_EC_SCL,PAD_EC_SDA,PAD_SOC_SCL),(SO_chip_top_test_ck_0)
